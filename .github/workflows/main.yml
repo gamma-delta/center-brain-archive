@@ -16,6 +16,7 @@ jobs:
         node-version: 10.x
     - name: npm install and build
       run: |
+        cd site
         npm install
         npm run build
 
