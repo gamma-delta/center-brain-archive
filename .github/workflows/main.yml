@@ -14,8 +14,13 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 10.x
-    - name: rust-cargo
-      uses: actions-rs/cargo@v1.0.1
+    - uses: actions-rs/toolchain@v1
+      with:
+        toolchain: stable
+    - uses: actions-rs/cargo@v1
+      with:
+        command: run
+        args:
 
     - name: Generate files with rust
       run: |
