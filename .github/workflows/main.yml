@@ -20,6 +20,8 @@ jobs:
           toolchain: stable
           override: true
 
+      - name: Install json-schema-to-typescript
+        run: npm install json-schema-to-typescript --save
       - name: Generate files with rust
         run: |
           cd generator

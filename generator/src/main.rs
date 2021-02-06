@@ -33,10 +33,14 @@ fn main() -> anyhow::Result<()> {
 
     let schema_string = serde_json::to_string(&schema)?;
     println!("Starting json2ts...");
-    let mut child = Command::new("json2ts.cmd")
-        .stdin(Stdio::piped()) // We pipe it in in a moment...
-        .stdout(Stdio::piped())
-        .spawn()?;
+    let mut child = Command::new(if cfg!(target_os = "windows") {
+        "json2ts.cmd"
+    } else {
+        "json2ts"
+    })
+    .stdin(Stdio::piped()) // We pipe it in in a moment...
+    .stdout(Stdio::piped())
+    .spawn()?;
     {
         // Not sure why this is in its own block but that's what the example does
         let stdin = child
