@@ -14,7 +14,15 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 10.x
-    - name: npm install and build
+    - name: rust-cargo
+      uses: actions-rs/cargo@v1.0.1
+
+    - name: Generate files with rust
+      run: |
+        cd generator
+        cargo run
+
+    - name: Generate site with npm
       run: |
         cd site
         npm install

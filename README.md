@@ -13,7 +13,7 @@ Left-click on an item to see all the ways to produce it. Right-click to see all 
 
 1) Have Rust, Nodejs, and Typescript installed.
 2) `git clone` this
-3) `cargo run` the `/generator` folder and run the unit test, to generate `dsp.json` and `dsp.d.ts`
+3) `cargo run` the `/generator` folder to generate `dsp.json` and `dsp.d.ts`
 
 ### Repository Structure
 
