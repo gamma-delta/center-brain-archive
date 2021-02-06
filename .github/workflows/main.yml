@@ -14,13 +14,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 10.x
-    - uses: actions-rs/toolchain@v1
-      with:
-        toolchain: stable
-    - uses: actions-rs/cargo@v1
-      with:
-        command: run
-        args:
+      - name: Install Rust
+        uses: actions-rs/toolchain@v1
+        with:
+            toolchain: stable
+            override: true
+            components:
 
     - name: Generate files with rust
       run: |
