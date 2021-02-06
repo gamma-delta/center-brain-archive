@@ -1,42 +1,41 @@
 name: Deploy to GitHub Pages
 on:
-  push:	
-    branches:	
+  push:
+    branches:
       - main
 
 jobs:
   deploy:
     name: Deploy to GitHub Pages
-    runs-on: ubuntu-latest    
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: Use Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: 10.x
+      - uses: actions/checkout@master
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10.x
       - name: Install Rust
         uses: actions-rs/toolchain@v1
         with:
-            toolchain: stable
-            override: true
-            components:
+          toolchain: stable
+          override: true
 
-    - name: Generate files with rust
-      run: |
-        cd generator
-        cargo run
+      - name: Generate files with rust
+        run: |
+          cd generator
+          cargo run
 
-    - name: Generate site with npm
-      run: |
-        cd site
-        npm install
-        npm run build
+      - name: Generate site with npm
+        run: |
+          cd site
+          npm install
+          npm run build
 
-    - name: Deploy
-      uses: s0/git-publish-subdir-action@develop
-      env:
-        REPO: self
-        BRANCH: gh-pages
-        FOLDER: site/generated
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        MESSAGE: "Generate Github Pages for commit {sha} with message:\n{msg}"
+      - name: Deploy
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: gh-pages
+          FOLDER: site/generated
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MESSAGE: "Generate Github Pages for commit {sha} with message:\n{msg}"
