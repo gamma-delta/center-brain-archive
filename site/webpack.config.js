@@ -7,8 +7,7 @@ module.exports = {
         filename: 'center_brain_archive.js',
         path: path.resolve(__dirname, 'generated'),
     },
-    mode: 'development',
-    devtool: 'source-map',
+    mode: 'production',
     module: {
         rules: [
             {

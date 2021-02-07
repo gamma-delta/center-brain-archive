@@ -1,9 +1,11 @@
 import { AllDSPInfo } from "./dsp";
 import * as Dom from "./dom";
+import { English } from "./translate/english";
 
 export let INFO: AllDSPInfo;
+export const TRANSLATIONS = English;
 
-fetch('/dsp.json')
+fetch('dsp.json')
     .then(r => r.json())
     .then((data: AllDSPInfo) => {
         INFO = data;
@@ -11,11 +13,7 @@ fetch('/dsp.json')
 
         const content = document.getElementById('content')!;
 
-        // For now
-        content.innerHTML = "";
-        content.appendChild(Dom.makeLanding());
-
-        window.addEventListener('hashchange', ev => {
+        let updater = () => {
             const matcher = /#\?(\w+)=(\w+)/;
             let match = window.location.hash.match(matcher);
 
@@ -26,6 +24,8 @@ fetch('/dsp.json')
                 let value = match[2];
                 if (key == "production") {
                     newContent = Dom.makeProduceItem(value);
+                } else if (key == "consumption") {
+                    newContent = Dom.makeConsumeItem(value);
                 } else {
                     newContent = Dom.makeLanding();
                 }
@@ -35,5 +35,9 @@ fetch('/dsp.json')
 
             content.innerHTML = "";
             content.appendChild(newContent);
-        });
+        };
+
+        window.addEventListener('hashchange', updater);
+        // and call it to start up!
+        updater();
     });

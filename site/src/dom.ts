@@ -1,5 +1,5 @@
 import { Item, ItemStack, Recipe } from "./dsp";
-import { INFO } from "./main";
+import { INFO, TRANSLATIONS } from "./main";
 
 /**
  * Create the main page.
@@ -7,10 +7,8 @@ import { INFO } from "./main";
 export function makeLanding(): HTMLElement {
     let landing = document.createElement("div");
     landing.innerHTML = `
-        <h1 class="display-1">Center Brain Archive</h1>
-
-        <p>Left-click on an item to see all the ways to produce it.<br>
-        Right-click to see all the ways to use it.</p>
+        <h1 class="display-1">${TRANSLATIONS.other.title}</h1>
+        <p>${TRANSLATIONS.other.instructions}</p>
     `;
 
     let items = document.createElement("ul");
@@ -29,14 +27,16 @@ export function makeLanding(): HTMLElement {
 export function makeProduceItem(item: string): HTMLElement {
     let body = document.createElement("div");
     if (item in INFO.production_methods) {
-        body.innerHTML = `<h2 class="display-2">Ways to produce ${item}</h2>`;
+        body.innerHTML = `<h2 class="display-2">${TRANSLATIONS.other.productionMethods(item as Item)}</h2>`;
 
         let methods = INFO.production_methods[item as keyof typeof INFO.production_methods];
         for (let recipe of methods) {
-            body.append(makeRecipe(recipe));
+            let elm = makeRecipe(recipe);
+            elm.classList.add("mt-4");
+            body.append(elm);
         }
     } else {
-        body.innerText = `Unknown item <code>${item}</code>`;
+        body.innerText = TRANSLATIONS.other.unknownItem(item);
     }
     return body;
 }
@@ -48,14 +48,16 @@ export function makeConsumeItem(item: string): HTMLElement {
     let body = document.createElement("div");
 
     if (item in INFO.consumption_methods) {
-        body.innerHTML = `<h2 class="display-2">Ways to consume ${item}</h2>`;
+        body.innerHTML = `<h2 class="display-2">${TRANSLATIONS.other.consumptionMethods(item as Item)}</h2>`;
 
         let methods = INFO.consumption_methods[item as keyof typeof INFO.consumption_methods];
         for (let recipe of methods) {
-            body.append(makeRecipe(recipe));
+            let elm = makeRecipe(recipe);
+            elm.classList.add("mt-4");
+            body.append(elm);
         }
     } else {
-        body.innerText = `Unknown item <code>${item}</code>`;
+        body.innerText = TRANSLATIONS.other.unknownItem(item);
     }
     return body;
 }
@@ -70,11 +72,6 @@ function makeRecipe(recipe: string): HTMLElement {
         let card = document.createElement("div");
         card.classList.add("card");
 
-        let header = document.createElement("div");
-        header.classList.add("card-header");
-        // TODO: translation
-        header.innerText = recipe;
-
         let body = document.createElement("div");
         body.classList.add("card-body");
 
@@ -86,9 +83,7 @@ function makeRecipe(recipe: string): HTMLElement {
         body.appendChild(inputs);
 
         body.innerHTML += `<p class="bi-arrow-down">
-            ${entry.time.toPrecision(1)} seconds, 
-            ${entry.made_in}, 
-            ${entry.handcraftable ? "Handcraftable" : "Not Handcraftable"}
+            ${TRANSLATIONS.other.craftinfo(entry.time, entry.made_in, entry.handcraftable)}
         </p>`;
 
         let outputs = document.createElement("ul");
@@ -100,15 +95,16 @@ function makeRecipe(recipe: string): HTMLElement {
 
         let footer = document.createElement("div");
         footer.classList.add("card-footer");
-        footer.innerText = "Unlocked by " + entry.unlocked_by;
+        footer.innerHTML = `<p>${TRANSLATIONS.other.unlockedBy(entry.unlocked_by)}</p>`;
+        footer.title = TRANSLATIONS.other.recipeID(recipe as any);
 
-        card.append(header, body, footer);
+        card.append(body, footer);
         return card;
     } else {
         // Error :(
         let card = document.createElement("div");
         card.classList.add("card");
-        card.innerText = `Unknown recipe ID <code>${recipe}</code>`;
+        card.innerText = TRANSLATIONS.other.unknownRecipeID(recipe);
         return card;
     }
 }
@@ -119,7 +115,7 @@ function makeRecipe(recipe: string): HTMLElement {
 function makeItem(item: Item, type: keyof HTMLElementTagNameMap = "p"): HTMLElement {
     let elm = document.createElement(type);
     elm.classList.add('dsp-item');
-    elm.innerText = item;
+    elm.innerText = TRANSLATIONS.items[item];
 
     addHandlersItem(elm, item);
 
@@ -132,7 +128,7 @@ function makeItem(item: Item, type: keyof HTMLElementTagNameMap = "p"): HTMLElem
 function makeItemstack(stack: ItemStack, type: keyof HTMLElementTagNameMap = "p"): HTMLElement {
     let elm = document.createElement(type);
     elm.classList.add('dsp-itemstack');
-    elm.innerText = `${stack.count}x ${stack.item}`;
+    elm.innerText = `${stack.count}x ${TRANSLATIONS.items[stack.item]}`;
 
     addHandlersItem(elm, stack.item);
 
@@ -148,6 +144,7 @@ function addHandlersItem(elm: HTMLElement, item: Item) {
     };
     elm.oncontextmenu = ev => {
         window.location.hash = "?consumption=" + item;
+        // Prevent the menu from actually happening
         ev.preventDefault();
     };
 }
