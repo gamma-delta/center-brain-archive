@@ -3,6 +3,6 @@ li {
     list-style: disc inside;
 }
 
-.dsp-item, .dsp-itemstack {
+.dsp-item, .dsp-itemstack, .pointer {
     cursor: pointer;
 }

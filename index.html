@@ -14,10 +14,13 @@
     <script src="center_brain_archive.js"></script>
 </head>
 
-<body class="dark-mode page-wrapper with-navbar with-custom-webkit-scrollbars with-custom-css-scrollbars"
+<body class="dark-mode page-wrapper with-navbar with-sidebar with-custom-webkit-scrollbars with-custom-css-scrollbars"
     data-dm-shortcut-enabled="true">
     <nav class="navbar sticky-top">
-        <a class="navbar-brand" href=".">Center Brain Archive</a>
+        <button id="toggle-sidebar-btn" class="btn btn-action" type="button">
+            <i class="bi-card-list" aria-hidden="true"></i>
+        </button>
+        <a class="navbar-brand" href="#">Center Brain Archive</a>
         <div class="navbar-content ml-auto">
             <div class="form-inline custom-switch d-none d-md-flex pr-20">
                 <input class="form-check-input pr-5" type="checkbox" id="usage-links">
@@ -33,9 +36,22 @@
         </div>
     </nav>
 
-    <div class="container-md content-wrapper" id="content">
-        <h1 class="display-1">Loading...</h1>
+    <div class="sidebar">
+        <div class="sidebar-menu">
+            <h5 class="sidebar-title" id="sidebar-title"></h5>
+            <div class="sidebar-divider"></div>
+            <div class="sidebar-content" id="pinned-recipes"></div>
+        </div>
     </div>
+
+    <div class="content-wrapper font-size-16">
+        <div class="container-fluid">
+            <div class="row row-eq-spacing-lg">
+                <div class="col-lg-9" id="content">
+                    <h1 class="display-1">Loading...</h1>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
