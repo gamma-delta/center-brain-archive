@@ -881,93 +881,221 @@
     },
     "CrystalSiliconFromIngot": {
       "recipe": "CrystalSiliconFromIngot",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
+      "ingredients": [
+        {
+          "item": "HighPuritySilicon",
+          "count": 1
+        }
+      ],
+      "time": 2.0,
+      "results": [
+        {
+          "item": "CrystalSilicon",
+          "count": 1
+        }
+      ],
+      "made_in": "Smelter",
       "handcraftable": false,
-      "unlocked_by": "DysonSphereProgram"
+      "unlocked_by": "CrystalSmelting"
     },
     "CrystalSiliconFromFractal": {
       "recipe": "CrystalSiliconFromFractal",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
+      "ingredients": [
+        {
+          "item": "FractalSilicon",
+          "count": 1
+        }
+      ],
+      "time": 4.0,
+      "results": [
+        {
+          "item": "CrystalSilicon",
+          "count": 1
+        }
+      ],
+      "made_in": "Smelter",
       "handcraftable": false,
-      "unlocked_by": "DysonSphereProgram"
+      "unlocked_by": "CrystalSmelting"
     },
     "GlassSmelting": {
       "recipe": "GlassSmelting",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
-      "unlocked_by": "DysonSphereProgram"
+      "ingredients": [
+        {
+          "item": "StoneOre",
+          "count": 2
+        }
+      ],
+      "time": 2.0,
+      "results": [
+        {
+          "item": "Glass",
+          "count": 1
+        }
+      ],
+      "made_in": "Smelter",
+      "handcraftable": true,
+      "unlocked_by": "AutomaticMetallurgy"
     },
     "DiamondFromGraphite": {
       "recipe": "DiamondFromGraphite",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
+      "ingredients": [
+        {
+          "item": "EnergeticGraphite",
+          "count": 1
+        }
+      ],
+      "time": 2.0,
+      "results": [
+        {
+          "item": "Diamond",
+          "count": 1
+        }
+      ],
+      "made_in": "Smelter",
       "handcraftable": false,
-      "unlocked_by": "DysonSphereProgram"
+      "unlocked_by": "CrystalSmelting"
     },
     "DiamondFromKimberlite": {
       "recipe": "DiamondFromKimberlite",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
+      "ingredients": [
+        {
+          "item": "Kimberlite",
+          "count": 1
+        }
+      ],
+      "time": 2.0,
+      "results": [
+        {
+          "item": "Diamond",
+          "count": 1
+        }
+      ],
+      "made_in": "Smelter",
       "handcraftable": false,
-      "unlocked_by": "DysonSphereProgram"
+      "unlocked_by": "CrystalSmelting"
     },
     "XRayCracking": {
       "recipe": "XRayCracking",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
+      "ingredients": [
+        {
+          "item": "RefinedOil",
+          "count": 1
+        },
+        {
+          "item": "Hydrogen",
+          "count": 2
+        }
+      ],
+      "time": 4.0,
+      "results": [
+        {
+          "item": "Graphene",
+          "count": 1
+        },
+        {
+          "item": "Hydrogen",
+          "count": 3
+        }
+      ],
+      "made_in": "OilRefinery",
       "handcraftable": false,
-      "unlocked_by": "DysonSphereProgram"
+      "unlocked_by": "XRayCracking"
     },
     "OrganicCrystalFromWood": {
       "recipe": "OrganicCrystalFromWood",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
+      "ingredients": [
+        {
+          "item": "Log",
+          "count": 20
+        },
+        {
+          "item": "PlantFuel",
+          "count": 30
+        },
+        {
+          "item": "Water",
+          "count": 10
+        }
+      ],
+      "time": 6.0,
+      "results": [
+        {
+          "item": "OrganicCrystal",
+          "count": 1
+        }
+      ],
+      "made_in": "ChemicalPlant",
       "handcraftable": false,
-      "unlocked_by": "DysonSphereProgram"
+      "unlocked_by": "PolymerChemicalEngineering"
     },
     "OrganicCrystalFromPlastic": {
       "recipe": "OrganicCrystalFromPlastic",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
+      "ingredients": [
+        {
+          "item": "Plastic",
+          "count": 2
+        },
+        {
+          "item": "RefinedOil",
+          "count": 1
+        },
+        {
+          "item": "Water",
+          "count": 1
+        }
+      ],
+      "time": 6.0,
+      "results": [
+        {
+          "item": "OrganicCrystal",
+          "count": 1
+        }
+      ],
+      "made_in": "ChemicalPlant",
       "handcraftable": false,
-      "unlocked_by": "DysonSphereProgram"
+      "unlocked_by": "PolymerChemicalEngineering"
     },
     "HydrogenFuelRod": {
       "recipe": "HydrogenFuelRod",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
-      "unlocked_by": "DysonSphereProgram"
+      "ingredients": [
+        {
+          "item": "TitaniumIngot",
+          "count": 1
+        },
+        {
+          "item": "Hydrogen",
+          "count": 5
+        }
+      ],
+      "time": 3.0,
+      "results": [
+        {
+          "item": "HydrogenFuelRod",
+          "count": 1
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "HydrogenFuelRod"
     },
     "SteelSmelting": {
       "recipe": "SteelSmelting",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
+      "ingredients": [
+        {
+          "item": "IronIngot",
+          "count": 3
+        }
+      ],
+      "time": 3.0,
+      "results": [
+        {
+          "item": "Steel",
+          "count": 1
+        }
+      ],
+      "made_in": "Smelter",
       "handcraftable": false,
-      "unlocked_by": "DysonSphereProgram"
+      "unlocked_by": "SteelSmelting"
     },
     "SiliconOreFromStone": {
       "recipe": "SiliconOreFromStone",
@@ -1255,12 +1383,13 @@
     "StoneOre": [],
     "CoalOre": [],
     "SiliconOre": [],
-    "TungstenOre": [],
+    "TitaniumOre": [],
     "Water": [],
     "CrudeOil": [],
     "Hydrogen": [
       "PlasmaRefining",
-      "GrapheneFromFireIce"
+      "GrapheneFromFireIce",
+      "XRayCracking"
     ],
     "Deuterium": [],
     "Antimatter": [],
@@ -1280,12 +1409,14 @@
     "HighPuritySilicon": [
       "SiliconSmelting"
     ],
-    "TungstenIngot": [],
+    "TitaniumIngot": [],
     "SufuricAcid": [],
     "RefinedOil": [
       "PlasmaRefining"
     ],
-    "HydrogenFuelRod": [],
+    "HydrogenFuelRod": [
+      "HydrogenFuelRod"
+    ],
     "DeuteronFuelRod": [],
     "AntimatterFuelRod": [],
     "FractalSilicon": [],
@@ -1295,22 +1426,36 @@
     "Electromagnet": [
       "Electromagnet"
     ],
-    "Glass": [],
-    "Diamond": [],
-    "CrystalSilicon": [],
+    "Glass": [
+      "GlassSmelting"
+    ],
+    "Diamond": [
+      "DiamondFromGraphite",
+      "DiamondFromKimberlite"
+    ],
+    "CrystalSilicon": [
+      "CrystalSiliconFromIngot",
+      "CrystalSiliconFromFractal"
+    ],
     "TitaniumAlloy": [],
     "FireIce": [],
     "Plastic": [
       "Plastic"
     ],
-    "OrganicCrystal": [],
+    "OrganicCrystal": [
+      "OrganicCrystalFromWood",
+      "OrganicCrystalFromPlastic"
+    ],
     "Graphene": [
       "GrapheneFromFireIce",
-      "GrapheneFromGraphiteAndSulfuric"
+      "GrapheneFromGraphiteAndSulfuric",
+      "XRayCracking"
     ],
     "Thruster": [],
     "OpticalGratingCrystal": [],
-    "Steel": [],
+    "Steel": [
+      "SteelSmelting"
+    ],
     "CircuitBoard": [],
     "Prism": [],
     "Motor": [],
@@ -1399,7 +1544,8 @@
       "CopperSmelting"
     ],
     "StoneOre": [
-      "StoneSmelting"
+      "StoneSmelting",
+      "GlassSmelting"
     ],
     "CoalOre": [
       "GraphiteSmelting"
@@ -1407,35 +1553,54 @@
     "SiliconOre": [
       "SiliconSmelting"
     ],
-    "TungstenOre": [],
-    "Water": [],
+    "TitaniumOre": [],
+    "Water": [
+      "OrganicCrystalFromWood",
+      "OrganicCrystalFromPlastic"
+    ],
     "CrudeOil": [
       "PlasmaRefining"
     ],
-    "Hydrogen": [],
+    "Hydrogen": [
+      "XRayCracking",
+      "HydrogenFuelRod"
+    ],
     "Deuterium": [],
     "Antimatter": [],
-    "Kimberlite": [],
-    "IronIngot": [],
+    "Kimberlite": [
+      "DiamondFromKimberlite"
+    ],
+    "IronIngot": [
+      "SteelSmelting"
+    ],
     "CopperIngot": [
       "Electromagnet"
     ],
     "StoneBrick": [],
     "EnergeticGraphite": [
       "Plastic",
-      "GrapheneFromGraphiteAndSulfuric"
+      "GrapheneFromGraphiteAndSulfuric",
+      "DiamondFromGraphite"
     ],
-    "HighPuritySilicon": [],
-    "TungstenIngot": [],
+    "HighPuritySilicon": [
+      "CrystalSiliconFromIngot"
+    ],
+    "TitaniumIngot": [
+      "HydrogenFuelRod"
+    ],
     "SufuricAcid": [],
     "RefinedOil": [
       "Plastic",
-      "GrapheneFromGraphiteAndSulfuric"
+      "GrapheneFromGraphiteAndSulfuric",
+      "XRayCracking",
+      "OrganicCrystalFromPlastic"
     ],
     "HydrogenFuelRod": [],
     "DeuteronFuelRod": [],
     "AntimatterFuelRod": [],
-    "FractalSilicon": [],
+    "FractalSilicon": [
+      "CrystalSiliconFromFractal"
+    ],
     "Magnet": [
       "Electromagnet"
     ],
@@ -1447,7 +1612,9 @@
     "FireIce": [
       "GrapheneFromFireIce"
     ],
-    "Plastic": [],
+    "Plastic": [
+      "OrganicCrystalFromPlastic"
+    ],
     "OrganicCrystal": [],
     "Graphene": [],
     "Thruster": [],
@@ -1482,7 +1649,9 @@
     "PlaneFilter": [],
     "QuantumChip": [],
     "LogisticsVessel": [],
-    "Log": [],
+    "Log": [
+      "OrganicCrystalFromWood"
+    ],
     "ElectromagneticMatrix": [],
     "EnergyMatrix": [],
     "StructureMatrix": [],
@@ -1493,7 +1662,9 @@
     "FrameMaterial": [],
     "DysonSphereComponent": [],
     "SmallCarrierRocket": [],
-    "PlantFuel": [],
+    "PlantFuel": [
+      "OrganicCrystalFromWood"
+    ],
     "TeslaTower": [],
     "WirelessPowerTower": [],
     "SatelliteSubstation": [],
