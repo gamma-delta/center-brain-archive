@@ -1,9 +1,13 @@
 import { AllDSPInfo } from "./dsp";
 import * as Dom from "./dom";
 import { English } from "./translate/english";
+import { isOnMobile } from "./checkers";
 
 export let INFO: AllDSPInfo;
 export const TRANSLATIONS = English;
+export const OPTIONS = {
+    displayUsageLinks: isOnMobile(),
+};
 
 fetch('dsp.json')
     .then(r => r.json())
@@ -40,4 +44,11 @@ fetch('dsp.json')
         window.addEventListener('hashchange', updater);
         // and call it to start up!
         updater();
+
+        const usageLinkToggle = document.getElementById('usage-links')! as HTMLInputElement;
+        usageLinkToggle.checked = OPTIONS.displayUsageLinks;
+        usageLinkToggle.onclick = ev => {
+            OPTIONS.displayUsageLinks = usageLinkToggle.checked;
+            updater();
+        };
     });

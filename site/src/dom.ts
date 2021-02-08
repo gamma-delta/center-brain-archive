@@ -1,15 +1,16 @@
 import { Item, ItemStack, Recipe } from "./dsp";
-import { INFO, TRANSLATIONS } from "./main";
+import { INFO, OPTIONS, TRANSLATIONS } from "./main";
 
 /**
  * Create the main page.
  */
 export function makeLanding(): HTMLElement {
     let landing = document.createElement("div");
-    landing.innerHTML = `
-        <h1 class="display-1">${TRANSLATIONS.other.title}</h1>
-        <p>${TRANSLATIONS.other.instructions}</p>
-    `;
+    landing.innerHTML = `<h1 class="display-1">${TRANSLATIONS.other.title}</h1>
+        <p>${TRANSLATIONS.other.disclaimer}</p>`;
+    if (!OPTIONS.displayUsageLinks) {
+        landing.innerHTML += `<p>${TRANSLATIONS.other.instructions}</p>`;
+    }
 
     let items = document.createElement("ul");
     for (let item of Object.keys(INFO.consumption_methods)) {
@@ -82,9 +83,10 @@ function makeRecipe(recipe: string): HTMLElement {
         }
         body.appendChild(inputs);
 
-        body.innerHTML += `<p class="bi-arrow-down">
-            ${TRANSLATIONS.other.craftinfo(entry.time, entry.made_in, entry.handcraftable)}
-        </p>`;
+        let arrow = document.createElement("p");
+        arrow.classList.add("bi-arrow-down");
+        arrow.innerText = TRANSLATIONS.other.craftinfo(entry.time, entry.made_in, entry.handcraftable);
+        body.appendChild(arrow);
 
         let outputs = document.createElement("ul");
         outputs.classList.add("list-unstyled");
@@ -94,8 +96,8 @@ function makeRecipe(recipe: string): HTMLElement {
         body.appendChild(outputs);
 
         let footer = document.createElement("div");
-        footer.classList.add("card-footer");
-        footer.innerHTML = `<p>${TRANSLATIONS.other.unlockedBy(entry.unlocked_by)}</p>`;
+        footer.classList.add("card-footer", "mb-0");
+        footer.innerText = TRANSLATIONS.other.unlockedBy(entry.unlocked_by);
         footer.title = TRANSLATIONS.other.recipeID(recipe as any);
 
         card.append(body, footer);
@@ -115,9 +117,15 @@ function makeRecipe(recipe: string): HTMLElement {
 function makeItem(item: Item, type: keyof HTMLElementTagNameMap = "p"): HTMLElement {
     let elm = document.createElement(type);
     elm.classList.add('dsp-item');
-    elm.innerText = TRANSLATIONS.items[item];
 
-    addHandlersItem(elm, item);
+    if (OPTIONS.displayUsageLinks)
+        elm.innerHTML = `${TRANSLATIONS.items[item]} 
+            [<a href="#?production=${item}">${TRANSLATIONS.other.produce}</a>]
+            [<a href="#?consumption=${item}">${TRANSLATIONS.other.consume}</a>]`;
+    else {
+        elm.innerText = TRANSLATIONS.items[item];
+        addHandlersItem(elm, item);
+    }
 
     return elm;
 }
@@ -128,9 +136,15 @@ function makeItem(item: Item, type: keyof HTMLElementTagNameMap = "p"): HTMLElem
 function makeItemstack(stack: ItemStack, type: keyof HTMLElementTagNameMap = "p"): HTMLElement {
     let elm = document.createElement(type);
     elm.classList.add('dsp-itemstack');
-    elm.innerText = `${stack.count}x ${TRANSLATIONS.items[stack.item]}`;
+    if (OPTIONS.displayUsageLinks)
+        elm.innerHTML = `${stack.count}x ${TRANSLATIONS.items[stack.item]} 
+        [<a href="#?production=${stack.item}">${TRANSLATIONS.other.produce}</a>]
+        [<a href="#?consumption=${stack.item}">${TRANSLATIONS.other.consume}</a>]`;
+    else {
+        elm.innerText = `${stack.count}x ${TRANSLATIONS.items[stack.item]}`;
+        addHandlersItem(elm, stack.item);
+    }
 
-    addHandlersItem(elm, stack.item);
 
     return elm;
 }

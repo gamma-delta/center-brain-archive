@@ -9,7 +9,7 @@ export const English = {
         "StoneOre": "Stone Ore",
         "CoalOre": "Coal Ore",
         "SiliconOre": "Silicon Ore",
-        "TungstenOre": "Tungsten Ore",
+        "TitaniumOre": "Titanium Ore",
         "Water": "Water",
         "CrudeOil": "Crude Oil",
         "Hydrogen": "Hydrogen",
@@ -21,7 +21,7 @@ export const English = {
         "StoneBrick": "Stone Brick",
         "EnergeticGraphite": "Energetic Graphite",
         "HighPuritySilicon": "High Purity Silicon",
-        "TungstenIngot": "Tungsten Ingot",
+        "TitaniumIngot": "Titanium Ingot",
         "SufuricAcid": "Sufuric Acid",
         "RefinedOil": "Refined Oil",
         "HydrogenFuelRod": "Hydrogen Fuel Rod",
@@ -203,8 +203,11 @@ export const English = {
     },
     other: {
         title: "Center Brain Archive",
+        disclaimer: "This site is not yet done, and many recipes are missing. (Feel free to add more via Github!)",
         instructions: "Left-click on an item to see all the ways to produce it.<br>Right-click to see all the ways to use it.",
 
+        produce: "Produce",
+        consume: "Consume",
         productionMethods(item: Item) {
             return `Ways to produce ${English.items[item]}`;
         },
