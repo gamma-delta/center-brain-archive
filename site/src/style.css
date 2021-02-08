@@ -1,3 +1,8 @@
+/* Cancel the hollow circles that Halfmoon does */
+li {
+    list-style: disc inside;
+}
+
 .dsp-item, .dsp-itemstack {
     cursor: pointer;
 }

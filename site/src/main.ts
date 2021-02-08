@@ -3,6 +3,11 @@ import * as Dom from "./dom";
 import { English } from "./translate/english";
 import { isOnMobile } from "./checkers";
 
+require("halfmoon/css/halfmoon-variables.min.css");
+import halfmoon = require("halfmoon");
+
+window.onload = halfmoon.onDOMContentLoaded;
+
 export let INFO: AllDSPInfo;
 export const TRANSLATIONS = English;
 export const OPTIONS = {

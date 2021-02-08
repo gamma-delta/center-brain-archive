@@ -8,6 +8,7 @@ module.exports = {
         path: path.resolve(__dirname, 'generated'),
     },
     mode: 'production',
+    devtool: 'source-map',
     module: {
         rules: [
             {
@@ -15,10 +16,14 @@ module.exports = {
                 use: 'ts-loader',
                 exclude: /node_modules/,
             },
-        ],
+            {
+                test: /\.css$/,
+                use: ["style-loader", "css-loader"],
+            },
+        ]
     },
     resolve: {
-        extensions: ['.tsx', '.ts', '.js'],
+        extensions: ['.tsx', '.ts', '.js', '.css'],
     },
     plugins: [
         new CopyPlugin({

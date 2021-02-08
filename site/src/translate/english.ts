@@ -197,7 +197,7 @@ export const English = {
         "AssemblingMachine": "Assembling Machine",
         "Smelter": "Smelter",
         "OilRefinery": "Oil Refinery",
-        "ChemicalPlant": "ChemicalPlant",
+        "ChemicalPlant": "Chemical Plant",
         "Fractionator": "Fractionator",
         "ToDo": "<This recipe is NYI>",
     },
