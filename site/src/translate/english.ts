@@ -206,8 +206,12 @@ export const English = {
         disclaimer: "This site is not yet done, and many recipes are missing. (Feel free to add more via Github!)",
         instructions: "Left-click on an item to see all the ways to produce it.<br>Right-click to see all the ways to use it.",
 
+        pinnedRecipes: "Pinned Recipes",
+
         produce: "Produce",
+        produceSmall: "P",
         consume: "Consume",
+        consumeSmall: "C",
         productionMethods(item: Item) {
             return `Ways to produce ${English.items[item]}`;
         },

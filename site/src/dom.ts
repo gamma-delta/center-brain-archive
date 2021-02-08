@@ -32,7 +32,7 @@ export function makeProduceItem(item: string): HTMLElement {
 
         let methods = INFO.production_methods[item as keyof typeof INFO.production_methods];
         for (let recipe of methods) {
-            let elm = makeRecipe(recipe);
+            let elm = makeRecipe(recipe, "listing");
             elm.classList.add("mt-4");
             body.append(elm);
         }
@@ -53,7 +53,7 @@ export function makeConsumeItem(item: string): HTMLElement {
 
         let methods = INFO.consumption_methods[item as keyof typeof INFO.consumption_methods];
         for (let recipe of methods) {
-            let elm = makeRecipe(recipe);
+            let elm = makeRecipe(recipe, "listing");
             elm.classList.add("mt-4");
             body.append(elm);
         }
@@ -63,23 +63,30 @@ export function makeConsumeItem(item: string): HTMLElement {
     return body;
 }
 
+export function updatePins() {
+    document.getElementById('pinned-recipes')!.innerHTML = "";
+    for (let recipe of OPTIONS.savedRecipes) {
+        document.getElementById('pinned-recipes')!.append(makeRecipe(recipe, "pinned"));
+    }
+}
+
 /**
  * Create an element to view the specified recipe.
  */
-function makeRecipe(recipe: string): HTMLElement {
+function makeRecipe(recipe: string, type: "listing" | "pinned"): HTMLElement {
     if (recipe in INFO.recipes) {
         let entry = INFO.recipes[recipe as keyof typeof INFO.recipes];
 
         let card = document.createElement("div");
-        card.classList.add("card");
+        card.classList.add("card", "p-0", "shadow");
 
         let body = document.createElement("div");
-        body.classList.add("card-body");
+        body.classList.add("content");
 
         let inputs = document.createElement("ul");
         inputs.classList.add("list-unstyled");
         for (let input of entry.ingredients) {
-            inputs.append(makeItemstack(input, "li"));
+            inputs.append(makeItemstack(input, "li", type == "pinned"));
         }
         body.appendChild(inputs);
 
@@ -91,16 +98,41 @@ function makeRecipe(recipe: string): HTMLElement {
         let outputs = document.createElement("ul");
         outputs.classList.add("list-unstyled");
         for (let output of entry.results) {
-            outputs.append(makeItemstack(output, "li"));
+            outputs.append(makeItemstack(output, "li", type == "pinned"));
         }
         body.appendChild(outputs);
 
         let footer = document.createElement("div");
-        footer.classList.add("card-footer", "mb-0");
+        footer.classList.add("px-card", "py-10", "bg-light-lm", "bg-very-dark-dm", "rounded-bottom");
         footer.innerText = TRANSLATIONS.other.unlockedBy(entry.unlocked_by);
         footer.title = TRANSLATIONS.other.recipeID(recipe as any);
 
-        card.append(body, footer);
+        let corner = document.createElement("p");
+        corner.classList.add("position-absolute", "top-0", "right-0", "m-5", "mt-0", "pointer");
+        corner.style.fontSize = "2rem";
+        if (type == "listing") {
+            corner.classList.add("bi-pin-angle-fill");
+
+            corner.onclick = ev => {
+                let pinned = makeRecipe(recipe, "pinned");
+                document.getElementById('pinned-recipes')!.append(pinned);
+                OPTIONS.savedRecipes.push(recipe as Recipe);
+            };
+        } else {
+            corner.classList.add("bi-x-square-fill");
+            // Make it smaller
+            card.classList.add("m-0", "mb-15", "font-size-12");
+            body.classList.add("m-15");
+            footer.classList.add("p-a5");
+            // Remember where this is being inserted into the DOM
+            let index = document.getElementById('pinned-recipes')!.childElementCount;
+            corner.onclick = ev => {
+                card.remove();
+                OPTIONS.savedRecipes.splice(index, 1);
+            };
+        }
+
+        card.append(body, footer, corner);
         return card;
     } else {
         // Error :(
@@ -114,14 +146,14 @@ function makeRecipe(recipe: string): HTMLElement {
 /**
  * Create an element representing an item.
  */
-function makeItem(item: Item, type: keyof HTMLElementTagNameMap = "p"): HTMLElement {
+function makeItem(item: Item, type: keyof HTMLElementTagNameMap = "p", small = false): HTMLElement {
     let elm = document.createElement(type);
     elm.classList.add('dsp-item');
 
     if (OPTIONS.displayUsageLinks)
         elm.innerHTML = `${TRANSLATIONS.items[item]} 
-            [<a href="#?production=${item}">${TRANSLATIONS.other.produce}</a>]
-            [<a href="#?consumption=${item}">${TRANSLATIONS.other.consume}</a>]`;
+            [<a href="#?production=${item}">${small ? TRANSLATIONS.other.produceSmall : TRANSLATIONS.other.produce}</a>]
+            [<a href="#?consumption=${item}">${small ? TRANSLATIONS.other.consumeSmall : TRANSLATIONS.other.consume}</a>]`;
     else {
         elm.innerText = TRANSLATIONS.items[item];
         addHandlersItem(elm, item);
@@ -133,13 +165,13 @@ function makeItem(item: Item, type: keyof HTMLElementTagNameMap = "p"): HTMLElem
 /**
  * Create an element representing an itemstack.
  */
-function makeItemstack(stack: ItemStack, type: keyof HTMLElementTagNameMap = "p"): HTMLElement {
+function makeItemstack(stack: ItemStack, type: keyof HTMLElementTagNameMap = "p", small = false): HTMLElement {
     let elm = document.createElement(type);
     elm.classList.add('dsp-itemstack');
     if (OPTIONS.displayUsageLinks)
         elm.innerHTML = `${stack.count}x ${TRANSLATIONS.items[stack.item]} 
-        [<a href="#?production=${stack.item}">${TRANSLATIONS.other.produce}</a>]
-        [<a href="#?consumption=${stack.item}">${TRANSLATIONS.other.consume}</a>]`;
+        [<a href="#?production=${stack.item}">${small ? TRANSLATIONS.other.produceSmall : TRANSLATIONS.other.produce}</a>]
+        [<a href="#?consumption=${stack.item}">${small ? TRANSLATIONS.other.consumeSmall : TRANSLATIONS.other.consume}</a>]`;
     else {
         elm.innerText = `${stack.count}x ${TRANSLATIONS.items[stack.item]}`;
         addHandlersItem(elm, stack.item);

@@ -1,4 +1,4 @@
-import { AllDSPInfo } from "./dsp";
+import { AllDSPInfo, Recipe } from "./dsp";
 import * as Dom from "./dom";
 import { English } from "./translate/english";
 import { isOnMobile } from "./checkers";
@@ -12,6 +12,7 @@ export let INFO: AllDSPInfo;
 export const TRANSLATIONS = English;
 export const OPTIONS = {
     displayUsageLinks: isOnMobile(),
+    savedRecipes: [] as Recipe[],
 };
 
 fetch('dsp.json')
@@ -21,7 +22,6 @@ fetch('dsp.json')
         console.log(INFO);
 
         const content = document.getElementById('content')!;
-
         let updater = () => {
             const matcher = /#\?(\w+)=(\w+)/;
             let match = window.location.hash.match(matcher);
@@ -55,5 +55,12 @@ fetch('dsp.json')
         usageLinkToggle.onclick = ev => {
             OPTIONS.displayUsageLinks = usageLinkToggle.checked;
             updater();
+            Dom.updatePins();
         };
+        const sidebarToggle = document.getElementById('toggle-sidebar-btn')!;
+        sidebarToggle.onclick = () => {
+            halfmoon.toggleSidebar();
+        };
+
+        document.getElementById('sidebar-title')!.innerText = TRANSLATIONS.other.pinnedRecipes;
     });
