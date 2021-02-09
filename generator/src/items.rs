@@ -24,7 +24,7 @@ pub enum Item {
     EnergeticGraphite,
     HighPuritySilicon,
     TitaniumIngot,
-    SufuricAcid,
+    SulfuricAcid,
     RefinedOil,
     HydrogenFuelRod,
     DeuteronFuelRod,
@@ -84,6 +84,7 @@ pub enum Item {
     DysonSphereComponent,
     SmallCarrierRocket,
     PlantFuel,
+
     TeslaTower,
     WirelessPowerTower,
     SatelliteSubstation,
@@ -121,13 +122,20 @@ pub enum Item {
     Smelter,
     ChemicalPlant,
     Fractionator,
+    WaterPump,
+    StorageTank,
 }
 
 #[derive(Serialize, JsonSchema)]
 #[serde(deny_unknown_fields)]
 pub struct ItemStack {
     pub item: Item,
-    pub count: u32,
+    /// This is a floating-point value to reflect chance recipies
+    /// (Specifically, Deuterium).
+    ///
+    /// I'm using f64 because I'm not 100% certain f32 can store 0.01...
+    /// Plus, JS uses f64s so it's safest this way.
+    pub count: f64,
 }
 
 impl Debug for ItemStack {

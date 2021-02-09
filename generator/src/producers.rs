@@ -10,12 +10,12 @@ pub enum Producer {
     OilRefinery,
     ChemicalPlant,
     Fractionator,
+    MatrixLab,
+    MiniatureParticleCollider,
 
-    ToDo,
-}
-
-impl Default for Producer {
-    fn default() -> Self {
-        Producer::ToDo
-    }
+    MiningMachine,
+    OilExtractor,
+    RayReceiver,
+    WaterPump,
+    OrbitCollector,
 }

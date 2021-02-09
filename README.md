@@ -37,6 +37,7 @@ you likely don't need to worry about that branch because it's generated automati
 
 ## Credits
 
+- @mellester for writing a script to scrape DSP recipes
 - The DSP Wiki maintainers
 - The DSP Discord
 - And of course, Youthcat Studio. 您们的电子游戏真牛！
