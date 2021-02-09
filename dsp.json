@@ -655,14 +655,14 @@
       "ingredients": [
         {
           "item": "IronOre",
-          "count": 1
+          "count": 1.0
         }
       ],
       "time": 1.0,
       "results": [
         {
           "item": "IronIngot",
-          "count": 1
+          "count": 1.0
         }
       ],
       "made_in": "Smelter",
@@ -674,14 +674,14 @@
       "ingredients": [
         {
           "item": "CopperOre",
-          "count": 1
+          "count": 1.0
         }
       ],
       "time": 1.0,
       "results": [
         {
           "item": "CopperIngot",
-          "count": 1
+          "count": 1.0
         }
       ],
       "made_in": "Smelter",
@@ -693,33 +693,33 @@
       "ingredients": [
         {
           "item": "SiliconOre",
-          "count": 2
+          "count": 2.0
         }
       ],
       "time": 2.0,
       "results": [
         {
           "item": "HighPuritySilicon",
-          "count": 1
+          "count": 1.0
         }
       ],
       "made_in": "Smelter",
       "handcraftable": true,
-      "unlocked_by": "SmeltingPurification"
+      "unlocked_by": "DysonSphereProgram"
     },
     "StoneSmelting": {
       "recipe": "StoneSmelting",
       "ingredients": [
         {
           "item": "StoneOre",
-          "count": 1
+          "count": 1.0
         }
       ],
       "time": 1.0,
       "results": [
         {
           "item": "StoneBrick",
-          "count": 1
+          "count": 1.0
         }
       ],
       "made_in": "Smelter",
@@ -731,125 +731,144 @@
       "ingredients": [
         {
           "item": "CoalOre",
-          "count": 2
+          "count": 2.0
         }
       ],
       "time": 2.0,
       "results": [
         {
           "item": "EnergeticGraphite",
-          "count": 1
+          "count": 1.0
         }
       ],
       "made_in": "Smelter",
       "handcraftable": true,
-      "unlocked_by": "SmeltingPurification"
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "TitaniumSmelting": {
+      "recipe": "TitaniumSmelting",
+      "ingredients": [
+        {
+          "item": "TitaniumOre",
+          "count": 2.0
+        }
+      ],
+      "time": 2.0,
+      "results": [
+        {
+          "item": "TitaniumIngot",
+          "count": 1.0
+        }
+      ],
+      "made_in": "Smelter",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
     },
     "PlasmaRefining": {
       "recipe": "PlasmaRefining",
       "ingredients": [
         {
           "item": "CrudeOil",
-          "count": 2
+          "count": 2.0
         }
       ],
       "time": 4.0,
       "results": [
         {
           "item": "Hydrogen",
-          "count": 1
+          "count": 1.0
         },
         {
           "item": "RefinedOil",
-          "count": 2
+          "count": 2.0
         }
       ],
       "made_in": "OilRefinery",
-      "handcraftable": false,
-      "unlocked_by": "PlasmaExtractRefining"
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
     },
     "Plastic": {
       "recipe": "Plastic",
       "ingredients": [
         {
-          "item": "EnergeticGraphite",
-          "count": 1
+          "item": "RefinedOil",
+          "count": 2.0
         },
         {
-          "item": "RefinedOil",
-          "count": 2
+          "item": "EnergeticGraphite",
+          "count": 1.0
         }
       ],
       "time": 3.0,
       "results": [
         {
           "item": "Plastic",
-          "count": 1
+          "count": 1.0
         }
       ],
       "made_in": "ChemicalPlant",
-      "handcraftable": false,
-      "unlocked_by": "BasicChemicalEngineering"
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
     },
     "GrapheneFromFireIce": {
       "recipe": "GrapheneFromFireIce",
       "ingredients": [
         {
           "item": "FireIce",
-          "count": 2
+          "count": 2.0
         }
       ],
       "time": 2.0,
       "results": [
         {
           "item": "Graphene",
-          "count": 2
+          "count": 2.0
         },
         {
           "item": "Hydrogen",
-          "count": 1
+          "count": 1.0
         }
       ],
       "made_in": "ChemicalPlant",
-      "handcraftable": false,
-      "unlocked_by": "AppliedSuperconductor"
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
     },
     "GrapheneFromGraphiteAndSulfuric": {
       "recipe": "GrapheneFromGraphiteAndSulfuric",
       "ingredients": [
         {
           "item": "EnergeticGraphite",
-          "count": 3
+          "count": 3.0
         },
         {
-          "item": "RefinedOil",
-          "count": 1
+          "item": "SulfuricAcid",
+          "count": 1.0
         }
       ],
       "time": 3.0,
       "results": [
         {
           "item": "Graphene",
-          "count": 2
+          "count": 2.0
         }
       ],
       "made_in": "ChemicalPlant",
-      "handcraftable": false,
-      "unlocked_by": "AppliedSuperconductor"
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
     },
     "MagnetSmelting": {
       "recipe": "MagnetSmelting",
       "ingredients": [
         {
           "item": "IronOre",
-          "count": 1
+          "count": 1.0
         }
       ],
       "time": 1.5,
       "results": [
         {
           "item": "Magnet",
-          "count": 1
+          "count": 1.0
         }
       ],
       "made_in": "Smelter",
@@ -861,18 +880,18 @@
       "ingredients": [
         {
           "item": "Magnet",
-          "count": 2
+          "count": 2.0
         },
         {
           "item": "CopperIngot",
-          "count": 1
+          "count": 1.0
         }
       ],
       "time": 1.0,
       "results": [
         {
           "item": "Electromagnet",
-          "count": 2
+          "count": 2.0
         }
       ],
       "made_in": "AssemblingMachine",
@@ -884,516 +903,2766 @@
       "ingredients": [
         {
           "item": "HighPuritySilicon",
-          "count": 1
+          "count": 1.0
         }
       ],
       "time": 2.0,
       "results": [
         {
           "item": "CrystalSilicon",
-          "count": 1
+          "count": 1.0
         }
       ],
       "made_in": "Smelter",
-      "handcraftable": false,
-      "unlocked_by": "CrystalSmelting"
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
     },
     "CrystalSiliconFromFractal": {
       "recipe": "CrystalSiliconFromFractal",
       "ingredients": [
         {
           "item": "FractalSilicon",
-          "count": 1
+          "count": 1.0
         }
       ],
       "time": 4.0,
       "results": [
         {
           "item": "CrystalSilicon",
-          "count": 1
+          "count": 1.0
         }
       ],
-      "made_in": "Smelter",
-      "handcraftable": false,
-      "unlocked_by": "CrystalSmelting"
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
     },
     "GlassSmelting": {
       "recipe": "GlassSmelting",
       "ingredients": [
         {
           "item": "StoneOre",
-          "count": 2
+          "count": 2.0
         }
       ],
       "time": 2.0,
       "results": [
         {
           "item": "Glass",
-          "count": 1
+          "count": 1.0
         }
       ],
       "made_in": "Smelter",
       "handcraftable": true,
-      "unlocked_by": "AutomaticMetallurgy"
+      "unlocked_by": "DysonSphereProgram"
     },
     "DiamondFromGraphite": {
       "recipe": "DiamondFromGraphite",
       "ingredients": [
         {
           "item": "EnergeticGraphite",
-          "count": 1
+          "count": 1.0
         }
       ],
       "time": 2.0,
       "results": [
         {
           "item": "Diamond",
-          "count": 1
+          "count": 1.0
         }
       ],
       "made_in": "Smelter",
-      "handcraftable": false,
-      "unlocked_by": "CrystalSmelting"
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
     },
     "DiamondFromKimberlite": {
       "recipe": "DiamondFromKimberlite",
       "ingredients": [
         {
           "item": "Kimberlite",
-          "count": 1
+          "count": 1.0
         }
       ],
       "time": 2.0,
       "results": [
         {
           "item": "Diamond",
-          "count": 1
+          "count": 1.0
         }
       ],
       "made_in": "Smelter",
-      "handcraftable": false,
-      "unlocked_by": "CrystalSmelting"
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
     },
     "XRayCracking": {
       "recipe": "XRayCracking",
       "ingredients": [
         {
           "item": "RefinedOil",
-          "count": 1
+          "count": 1.0
         },
         {
           "item": "Hydrogen",
-          "count": 2
+          "count": 2.0
         }
       ],
       "time": 4.0,
       "results": [
         {
-          "item": "Graphene",
-          "count": 1
+          "item": "Hydrogen",
+          "count": 3.0
         },
         {
-          "item": "Hydrogen",
-          "count": 3
+          "item": "EnergeticGraphite",
+          "count": 1.0
         }
       ],
       "made_in": "OilRefinery",
-      "handcraftable": false,
-      "unlocked_by": "XRayCracking"
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
     },
     "OrganicCrystalFromWood": {
       "recipe": "OrganicCrystalFromWood",
       "ingredients": [
         {
           "item": "Log",
-          "count": 20
+          "count": 20.0
         },
         {
           "item": "PlantFuel",
-          "count": 30
+          "count": 30.0
         },
         {
           "item": "Water",
-          "count": 10
+          "count": 10.0
         }
       ],
       "time": 6.0,
       "results": [
         {
           "item": "OrganicCrystal",
-          "count": 1
+          "count": 1.0
         }
       ],
-      "made_in": "ChemicalPlant",
-      "handcraftable": false,
-      "unlocked_by": "PolymerChemicalEngineering"
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
     },
     "OrganicCrystalFromPlastic": {
       "recipe": "OrganicCrystalFromPlastic",
       "ingredients": [
         {
           "item": "Plastic",
-          "count": 2
+          "count": 2.0
         },
         {
           "item": "RefinedOil",
-          "count": 1
+          "count": 1.0
         },
         {
           "item": "Water",
-          "count": 1
+          "count": 1.0
         }
       ],
       "time": 6.0,
       "results": [
         {
           "item": "OrganicCrystal",
-          "count": 1
+          "count": 1.0
         }
       ],
       "made_in": "ChemicalPlant",
-      "handcraftable": false,
-      "unlocked_by": "PolymerChemicalEngineering"
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
     },
     "HydrogenFuelRod": {
       "recipe": "HydrogenFuelRod",
       "ingredients": [
         {
           "item": "TitaniumIngot",
-          "count": 1
+          "count": 1.0
         },
         {
           "item": "Hydrogen",
-          "count": 5
+          "count": 5.0
         }
       ],
       "time": 3.0,
       "results": [
         {
           "item": "HydrogenFuelRod",
-          "count": 1
+          "count": 1.0
         }
       ],
       "made_in": "AssemblingMachine",
       "handcraftable": true,
-      "unlocked_by": "HydrogenFuelRod"
+      "unlocked_by": "DysonSphereProgram"
     },
     "SteelSmelting": {
       "recipe": "SteelSmelting",
       "ingredients": [
         {
           "item": "IronIngot",
-          "count": 3
+          "count": 3.0
         }
       ],
       "time": 3.0,
       "results": [
         {
           "item": "Steel",
-          "count": 1
+          "count": 1.0
         }
       ],
       "made_in": "Smelter",
-      "handcraftable": false,
-      "unlocked_by": "SteelSmelting"
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
     },
     "SiliconOreFromStone": {
       "recipe": "SiliconOreFromStone",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "ingredients": [
+        {
+          "item": "StoneOre",
+          "count": 10.0
+        }
+      ],
+      "time": 10.0,
+      "results": [
+        {
+          "item": "SiliconOre",
+          "count": 1.0
+        }
+      ],
+      "made_in": "Smelter",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
     "CircuitBoard": {
       "recipe": "CircuitBoard",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "ingredients": [
+        {
+          "item": "IronIngot",
+          "count": 2.0
+        },
+        {
+          "item": "CopperIngot",
+          "count": 1.0
+        }
+      ],
+      "time": 1.0,
+      "results": [
+        {
+          "item": "CircuitBoard",
+          "count": 2.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
     "SulfuricAcidFromStone": {
       "recipe": "SulfuricAcidFromStone",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "ingredients": [
+        {
+          "item": "RefinedOil",
+          "count": 6.0
+        },
+        {
+          "item": "StoneOre",
+          "count": 8.0
+        },
+        {
+          "item": "Water",
+          "count": 4.0
+        }
+      ],
+      "time": 6.0,
+      "results": [
+        {
+          "item": "SulfuricAcid",
+          "count": 4.0
+        }
+      ],
+      "made_in": "ChemicalPlant",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
     "PlasmaExciter": {
       "recipe": "PlasmaExciter",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "ingredients": [
+        {
+          "item": "Electromagnet",
+          "count": 4.0
+        },
+        {
+          "item": "Prism",
+          "count": 2.0
+        }
+      ],
+      "time": 2.0,
+      "results": [
+        {
+          "item": "PlasmaExciter",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
     "Processor": {
       "recipe": "Processor",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "ingredients": [
+        {
+          "item": "CircuitBoard",
+          "count": 2.0
+        },
+        {
+          "item": "MicrocrystallineComponent",
+          "count": 2.0
+        }
+      ],
+      "time": 3.0,
+      "results": [
+        {
+          "item": "Processor",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
     "PhotonCombinerFromPrism": {
       "recipe": "PhotonCombinerFromPrism",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "ingredients": [
+        {
+          "item": "Prism",
+          "count": 2.0
+        },
+        {
+          "item": "CircuitBoard",
+          "count": 1.0
+        }
+      ],
+      "time": 3.0,
+      "results": [
+        {
+          "item": "PhotonCombiner",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
     "PhotonCombinerFromCrystal": {
       "recipe": "PhotonCombinerFromCrystal",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "ingredients": [
+        {
+          "item": "OpticalGratingCrystal",
+          "count": 1.0
+        },
+        {
+          "item": "CircuitBoard",
+          "count": 1.0
+        }
+      ],
+      "time": 3.0,
+      "results": [
+        {
+          "item": "PhotonCombiner",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
     "MicrocrystallineComponent": {
       "recipe": "MicrocrystallineComponent",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "ingredients": [
+        {
+          "item": "HighPuritySilicon",
+          "count": 2.0
+        },
+        {
+          "item": "CopperIngot",
+          "count": 1.0
+        }
+      ],
+      "time": 2.0,
+      "results": [
+        {
+          "item": "MicrocrystallineComponent",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
     "ElectromagneticMatrix": {
       "recipe": "ElectromagneticMatrix",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "ingredients": [
+        {
+          "item": "Electromagnet",
+          "count": 1.0
+        },
+        {
+          "item": "CircuitBoard",
+          "count": 1.0
+        }
+      ],
+      "time": 3.0,
+      "results": [
+        {
+          "item": "ElectromagneticMatrix",
+          "count": 1.0
+        }
+      ],
+      "made_in": "MatrixLab",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
     "EnergyMatrix": {
       "recipe": "EnergyMatrix",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "ingredients": [
+        {
+          "item": "EnergeticGraphite",
+          "count": 2.0
+        },
+        {
+          "item": "Hydrogen",
+          "count": 2.0
+        }
+      ],
+      "time": 6.0,
+      "results": [
+        {
+          "item": "EnergyMatrix",
+          "count": 1.0
+        }
+      ],
+      "made_in": "MatrixLab",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "StructureMatrix": {
+      "recipe": "StructureMatrix",
+      "ingredients": [
+        {
+          "item": "Diamond",
+          "count": 1.0
+        },
+        {
+          "item": "TitaniumCrystal",
+          "count": 1.0
+        }
+      ],
+      "time": 8.0,
+      "results": [
+        {
+          "item": "StructureMatrix",
+          "count": 1.0
+        }
+      ],
+      "made_in": "MatrixLab",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "InformationMatrix": {
+      "recipe": "InformationMatrix",
+      "ingredients": [
+        {
+          "item": "Processor",
+          "count": 2.0
+        },
+        {
+          "item": "ParticleBroadband",
+          "count": 1.0
+        }
+      ],
+      "time": 10.0,
+      "results": [
+        {
+          "item": "InformationMatrix",
+          "count": 1.0
+        }
+      ],
+      "made_in": "MatrixLab",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "GravityMatrix": {
+      "recipe": "GravityMatrix",
+      "ingredients": [
+        {
+          "item": "GravitonLens",
+          "count": 1.0
+        },
+        {
+          "item": "QuantumChip",
+          "count": 1.0
+        }
+      ],
+      "time": 24.0,
+      "results": [
+        {
+          "item": "GravityMatrix",
+          "count": 2.0
+        }
+      ],
+      "made_in": "MatrixLab",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "UniverseMatrix": {
+      "recipe": "UniverseMatrix",
+      "ingredients": [
+        {
+          "item": "ElectromagneticMatrix",
+          "count": 1.0
+        },
+        {
+          "item": "EnergyMatrix",
+          "count": 1.0
+        },
+        {
+          "item": "StructureMatrix",
+          "count": 1.0
+        },
+        {
+          "item": "InformationMatrix",
+          "count": 1.0
+        },
+        {
+          "item": "GravityMatrix",
+          "count": 1.0
+        },
+        {
+          "item": "Antimatter",
+          "count": 1.0
+        }
+      ],
+      "time": 15.0,
+      "results": [
+        {
+          "item": "UniverseMatrix",
+          "count": 1.0
+        }
+      ],
+      "made_in": "MatrixLab",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
     "Foundation": {
       "recipe": "Foundation",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "ingredients": [
+        {
+          "item": "StoneBrick",
+          "count": 3.0
+        },
+        {
+          "item": "Steel",
+          "count": 1.0
+        }
+      ],
+      "time": 1.0,
+      "results": [
+        {
+          "item": "Foundation",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "Gear": {
+      "recipe": "Gear",
+      "ingredients": [
+        {
+          "item": "IronIngot",
+          "count": 1.0
+        }
+      ],
+      "time": 1.0,
+      "results": [
+        {
+          "item": "Gear",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "QuantumChip": {
+      "recipe": "QuantumChip",
+      "ingredients": [
+        {
+          "item": "Processor",
+          "count": 2.0
+        },
+        {
+          "item": "PlaneFilter",
+          "count": 2.0
+        }
+      ],
+      "time": 6.0,
+      "results": [
+        {
+          "item": "QuantumChip",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "DiracInversion": {
+      "recipe": "DiracInversion",
+      "ingredients": [
+        {
+          "item": "CriticalPhoton",
+          "count": 2.0
+        }
+      ],
+      "time": 2.0,
+      "results": [
+        {
+          "item": "Antimatter",
+          "count": 2.0
+        },
+        {
+          "item": "Hydrogen",
+          "count": 2.0
+        }
+      ],
+      "made_in": "MiniatureParticleCollider",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "Prism": {
+      "recipe": "Prism",
+      "ingredients": [
+        {
+          "item": "Glass",
+          "count": 3.0
+        }
+      ],
+      "time": 2.0,
+      "results": [
+        {
+          "item": "Prism",
+          "count": 2.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "Thruster": {
+      "recipe": "Thruster",
+      "ingredients": [
+        {
+          "item": "Steel",
+          "count": 2.0
+        },
+        {
+          "item": "CopperIngot",
+          "count": 3.0
+        }
+      ],
+      "time": 4.0,
+      "results": [
+        {
+          "item": "Thruster",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "ReinforcedThruster": {
+      "recipe": "ReinforcedThruster",
+      "ingredients": [
+        {
+          "item": "TitaniumAlloy",
+          "count": 5.0
+        },
+        {
+          "item": "ElectromagneticTurbine",
+          "count": 5.0
+        }
+      ],
+      "time": 6.0,
+      "results": [
+        {
+          "item": "ReinforcedThruster",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "CasimirCrystalFromTitanium": {
+      "recipe": "CasimirCrystalFromTitanium",
+      "ingredients": [
+        {
+          "item": "TitaniumCrystal",
+          "count": 1.0
+        },
+        {
+          "item": "Graphene",
+          "count": 2.0
+        },
+        {
+          "item": "Hydrogen",
+          "count": 12.0
+        }
+      ],
+      "time": 4.0,
+      "results": [
+        {
+          "item": "CasimirCrystal",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "CasimirCrystalFromOpticalGratingCrystal": {
+      "recipe": "CasimirCrystalFromOpticalGratingCrystal",
+      "ingredients": [
+        {
+          "item": "OpticalGratingCrystal",
+          "count": 6.0
+        },
+        {
+          "item": "Graphene",
+          "count": 2.0
+        },
+        {
+          "item": "Hydrogen",
+          "count": 12.0
+        }
+      ],
+      "time": 4.0,
+      "results": [
+        {
+          "item": "CasimirCrystal",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "TitaniumGlass": {
+      "recipe": "TitaniumGlass",
+      "ingredients": [
+        {
+          "item": "Glass",
+          "count": 2.0
+        },
+        {
+          "item": "TitaniumIngot",
+          "count": 2.0
+        },
+        {
+          "item": "Water",
+          "count": 2.0
+        }
+      ],
+      "time": 5.0,
+      "results": [
+        {
+          "item": "TitaniumGlass",
+          "count": 2.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "TitaniumAlloy": {
+      "recipe": "TitaniumAlloy",
+      "ingredients": [
+        {
+          "item": "TitaniumIngot",
+          "count": 4.0
+        },
+        {
+          "item": "Steel",
+          "count": 4.0
+        },
+        {
+          "item": "SulfuricAcid",
+          "count": 8.0
+        }
+      ],
+      "time": 12.0,
+      "results": [
+        {
+          "item": "TitaniumAlloy",
+          "count": 4.0
+        }
+      ],
+      "made_in": "Smelter",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "TitaniumCrystal": {
+      "recipe": "TitaniumCrystal",
+      "ingredients": [
+        {
+          "item": "OrganicCrystal",
+          "count": 1.0
+        },
+        {
+          "item": "TitaniumIngot",
+          "count": 3.0
+        }
+      ],
+      "time": 4.0,
+      "results": [
+        {
+          "item": "TitaniumCrystal",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "CarbonNanotubeFromGraphene": {
+      "recipe": "CarbonNanotubeFromGraphene",
+      "ingredients": [
+        {
+          "item": "Graphene",
+          "count": 3.0
+        },
+        {
+          "item": "TitaniumIngot",
+          "count": 1.0
+        }
+      ],
+      "time": 4.0,
+      "results": [
+        {
+          "item": "CarbonNanotube",
+          "count": 2.0
+        }
+      ],
+      "made_in": "ChemicalPlant",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "CarbonNanotubeFromSpiniform": {
+      "recipe": "CarbonNanotubeFromSpiniform",
+      "ingredients": [
+        {
+          "item": "SpiniformStalagmiteCrystal",
+          "count": 2.0
+        }
+      ],
+      "time": 4.0,
+      "results": [
+        {
+          "item": "CarbonNanotube",
+          "count": 2.0
+        }
+      ],
+      "made_in": "ChemicalPlant",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "ParticleBroadband": {
+      "recipe": "ParticleBroadband",
+      "ingredients": [
+        {
+          "item": "CarbonNanotube",
+          "count": 2.0
+        },
+        {
+          "item": "CrystalSilicon",
+          "count": 2.0
+        },
+        {
+          "item": "Plastic",
+          "count": 1.0
+        }
+      ],
+      "time": 8.0,
+      "results": [
+        {
+          "item": "ParticleBroadband",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "PlaneFilter": {
+      "recipe": "PlaneFilter",
+      "ingredients": [
+        {
+          "item": "CasimirCrystal",
+          "count": 1.0
+        },
+        {
+          "item": "TitaniumGlass",
+          "count": 2.0
+        }
+      ],
+      "time": 12.0,
+      "results": [
+        {
+          "item": "PlaneFilter",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "DeuteriumInParticleCollider": {
+      "recipe": "DeuteriumInParticleCollider",
+      "ingredients": [
+        {
+          "item": "Hydrogen",
+          "count": 10.0
+        }
+      ],
+      "time": 5.0,
+      "results": [
+        {
+          "item": "Deuterium",
+          "count": 5.0
+        }
+      ],
+      "made_in": "MiniatureParticleCollider",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "DeuteriumFractionation": {
+      "recipe": "DeuteriumFractionation",
+      "ingredients": [
+        {
+          "item": "Hydrogen",
+          "count": 1.0
+        }
+      ],
+      "time": 1.0,
+      "results": [
+        {
+          "item": "Deuterium",
+          "count": 0.01
+        },
+        {
+          "item": "Hydrogen",
+          "count": 0.99
+        }
+      ],
+      "made_in": "Fractionator",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "DeuteronFuelRod": {
+      "recipe": "DeuteronFuelRod",
+      "ingredients": [
+        {
+          "item": "TitaniumAlloy",
+          "count": 1.0
+        },
+        {
+          "item": "Deuterium",
+          "count": 10.0
+        },
+        {
+          "item": "SuperMagneticRing",
+          "count": 1.0
+        }
+      ],
+      "time": 6.0,
+      "results": [
+        {
+          "item": "DeuteronFuelRod",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "AnnihilationConstraintSphere": {
+      "recipe": "AnnihilationConstraintSphere",
+      "ingredients": [
+        {
+          "item": "ParticleContainer",
+          "count": 1.0
+        },
+        {
+          "item": "Processor",
+          "count": 1.0
+        }
+      ],
+      "time": 20.0,
+      "results": [
+        {
+          "item": "AnnihilationConstraintSphere",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "AntimatterFuelRod": {
+      "recipe": "AntimatterFuelRod",
+      "ingredients": [
+        {
+          "item": "Antimatter",
+          "count": 10.0
+        },
+        {
+          "item": "Hydrogen",
+          "count": 10.0
+        },
+        {
+          "item": "AnnihilationConstraintSphere",
+          "count": 1.0
+        },
+        {
+          "item": "TitaniumAlloy",
+          "count": 1.0
+        }
+      ],
+      "time": 12.0,
+      "results": [
+        {
+          "item": "AntimatterFuelRod",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "SpaceWarperFromLens": {
+      "recipe": "SpaceWarperFromLens",
+      "ingredients": [
+        {
+          "item": "GravitonLens",
+          "count": 1.0
+        }
+      ],
+      "time": 10.0,
+      "results": [
+        {
+          "item": "SpaceWarper",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "SpaceWarperFromMatrix": {
+      "recipe": "SpaceWarperFromMatrix",
+      "ingredients": [
+        {
+          "item": "GravityMatrix",
+          "count": 1.0
+        }
+      ],
+      "time": 10.0,
+      "results": [
+        {
+          "item": "SpaceWarper",
+          "count": 8.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "FrameMaterial": {
+      "recipe": "FrameMaterial",
+      "ingredients": [
+        {
+          "item": "CarbonNanotube",
+          "count": 4.0
+        },
+        {
+          "item": "TitaniumAlloy",
+          "count": 1.0
+        },
+        {
+          "item": "HighPuritySilicon",
+          "count": 1.0
+        }
+      ],
+      "time": 6.0,
+      "results": [
+        {
+          "item": "FrameMaterial",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "DysonSphereComponent": {
+      "recipe": "DysonSphereComponent",
+      "ingredients": [
+        {
+          "item": "FrameMaterial",
+          "count": 3.0
+        },
+        {
+          "item": "SolarPanel",
+          "count": 3.0
+        },
+        {
+          "item": "Processor",
+          "count": 3.0
+        }
+      ],
+      "time": 8.0,
+      "results": [
+        {
+          "item": "DysonSphereComponent",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "SmallCarrierRocket": {
+      "recipe": "SmallCarrierRocket",
+      "ingredients": [
+        {
+          "item": "DysonSphereComponent",
+          "count": 2.0
+        },
+        {
+          "item": "DeuteronFuelRod",
+          "count": 2.0
+        },
+        {
+          "item": "QuantumChip",
+          "count": 2.0
+        }
+      ],
+      "time": 6.0,
+      "results": [
+        {
+          "item": "SmallCarrierRocket",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "LogisticsDrone": {
+      "recipe": "LogisticsDrone",
+      "ingredients": [
+        {
+          "item": "IronIngot",
+          "count": 5.0
+        },
+        {
+          "item": "Processor",
+          "count": 2.0
+        },
+        {
+          "item": "Thruster",
+          "count": 2.0
+        }
+      ],
+      "time": 4.0,
+      "results": [
+        {
+          "item": "LogisticsDrone",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "LogisticsVessel": {
+      "recipe": "LogisticsVessel",
+      "ingredients": [
+        {
+          "item": "TitaniumAlloy",
+          "count": 10.0
+        },
+        {
+          "item": "Processor",
+          "count": 10.0
+        },
+        {
+          "item": "ReinforcedThruster",
+          "count": 2.0
+        }
+      ],
+      "time": 6.0,
+      "results": [
+        {
+          "item": "LogisticsVessel",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "Motor": {
+      "recipe": "Motor",
+      "ingredients": [
+        {
+          "item": "IronIngot",
+          "count": 2.0
+        },
+        {
+          "item": "Gear",
+          "count": 1.0
+        },
+        {
+          "item": "Electromagnet",
+          "count": 1.0
+        }
+      ],
+      "time": 2.0,
+      "results": [
+        {
+          "item": "Motor",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "ElectromagneticTurbine": {
+      "recipe": "ElectromagneticTurbine",
+      "ingredients": [
+        {
+          "item": "Motor",
+          "count": 2.0
+        },
+        {
+          "item": "Electromagnet",
+          "count": 2.0
+        }
+      ],
+      "time": 2.0,
+      "results": [
+        {
+          "item": "ElectromagneticTurbine",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "ParticleContainerFromEMTurbine": {
+      "recipe": "ParticleContainerFromEMTurbine",
+      "ingredients": [
+        {
+          "item": "ElectromagneticTurbine",
+          "count": 2.0
+        },
+        {
+          "item": "CopperIngot",
+          "count": 2.0
+        },
+        {
+          "item": "Graphene",
+          "count": 2.0
+        }
+      ],
+      "time": 4.0,
+      "results": [
+        {
+          "item": "ParticleContainer",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "ParticleContainerFromUnipolar": {
+      "recipe": "ParticleContainerFromUnipolar",
+      "ingredients": [
+        {
+          "item": "UnipolarMagnet",
+          "count": 10.0
+        },
+        {
+          "item": "CopperIngot",
+          "count": 2.0
+        }
+      ],
+      "time": 4.0,
+      "results": [
+        {
+          "item": "ParticleContainer",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "SuperMagneticRing": {
+      "recipe": "SuperMagneticRing",
+      "ingredients": [
+        {
+          "item": "ElectromagneticTurbine",
+          "count": 2.0
+        },
+        {
+          "item": "Magnet",
+          "count": 3.0
+        },
+        {
+          "item": "EnergeticGraphite",
+          "count": 1.0
+        }
+      ],
+      "time": 3.0,
+      "results": [
+        {
+          "item": "SuperMagneticRing",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "StrangeMatter": {
+      "recipe": "StrangeMatter",
+      "ingredients": [
+        {
+          "item": "ParticleContainer",
+          "count": 2.0
+        },
+        {
+          "item": "IronIngot",
+          "count": 2.0
+        },
+        {
+          "item": "Deuterium",
+          "count": 10.0
+        }
+      ],
+      "time": 8.0,
+      "results": [
+        {
+          "item": "StrangeMatter",
+          "count": 1.0
+        }
+      ],
+      "made_in": "MiniatureParticleCollider",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "GravitonLens": {
+      "recipe": "GravitonLens",
+      "ingredients": [
+        {
+          "item": "Diamond",
+          "count": 4.0
+        },
+        {
+          "item": "StrangeMatter",
+          "count": 1.0
+        }
+      ],
+      "time": 6.0,
+      "results": [
+        {
+          "item": "GravitonLens",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
     "TeslaTower": {
       "recipe": "TeslaTower",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "ingredients": [
+        {
+          "item": "IronIngot",
+          "count": 2.0
+        },
+        {
+          "item": "Electromagnet",
+          "count": 1.0
+        }
+      ],
+      "time": 1.0,
+      "results": [
+        {
+          "item": "TeslaTower",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
     "WirelessPowerTower": {
       "recipe": "WirelessPowerTower",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "ingredients": [
+        {
+          "item": "TeslaTower",
+          "count": 1.0
+        },
+        {
+          "item": "PlasmaExciter",
+          "count": 3.0
+        }
+      ],
+      "time": 3.0,
+      "results": [
+        {
+          "item": "WirelessPowerTower",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "SatelliteSubstation": {
+      "recipe": "SatelliteSubstation",
+      "ingredients": [
+        {
+          "item": "WirelessPowerTower",
+          "count": 1.0
+        },
+        {
+          "item": "SuperMagneticRing",
+          "count": 10.0
+        },
+        {
+          "item": "FrameMaterial",
+          "count": 2.0
+        }
+      ],
+      "time": 5.0,
+      "results": [
+        {
+          "item": "SatelliteSubstation",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
     "WindTurbine": {
       "recipe": "WindTurbine",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "ingredients": [
+        {
+          "item": "IronIngot",
+          "count": 6.0
+        },
+        {
+          "item": "Gear",
+          "count": 1.0
+        },
+        {
+          "item": "Electromagnet",
+          "count": 3.0
+        }
+      ],
+      "time": 4.0,
+      "results": [
+        {
+          "item": "WindTurbine",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
     "ThermalPowerStation": {
       "recipe": "ThermalPowerStation",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "ingredients": [
+        {
+          "item": "IronIngot",
+          "count": 10.0
+        },
+        {
+          "item": "StoneBrick",
+          "count": 4.0
+        },
+        {
+          "item": "Gear",
+          "count": 4.0
+        },
+        {
+          "item": "Electromagnet",
+          "count": 4.0
+        }
+      ],
+      "time": 5.0,
+      "results": [
+        {
+          "item": "ThermalPowerStation",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
     "SolarPanel": {
       "recipe": "SolarPanel",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "ingredients": [
+        {
+          "item": "CopperIngot",
+          "count": 6.0
+        },
+        {
+          "item": "HighPuritySilicon",
+          "count": 6.0
+        },
+        {
+          "item": "CircuitBoard",
+          "count": 4.0
+        }
+      ],
+      "time": 5.0,
+      "results": [
+        {
+          "item": "SolarPanel",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
     "ConveyorMK1": {
       "recipe": "ConveyorMK1",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "ingredients": [
+        {
+          "item": "IronIngot",
+          "count": 2.0
+        },
+        {
+          "item": "Gear",
+          "count": 1.0
+        }
+      ],
+      "time": 1.0,
+      "results": [
+        {
+          "item": "ConveyorMK1",
+          "count": 3.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "ConveyorMK2": {
+      "recipe": "ConveyorMK2",
+      "ingredients": [
+        {
+          "item": "ConveyorMK1",
+          "count": 3.0
+        },
+        {
+          "item": "ElectromagneticTurbine",
+          "count": 1.0
+        }
+      ],
+      "time": 1.0,
+      "results": [
+        {
+          "item": "ConveyorMK2",
+          "count": 3.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "ConveyorMK3": {
+      "recipe": "ConveyorMK3",
+      "ingredients": [
+        {
+          "item": "ConveyorMK2",
+          "count": 3.0
+        },
+        {
+          "item": "SuperMagneticRing",
+          "count": 1.0
+        },
+        {
+          "item": "Graphene",
+          "count": 1.0
+        }
+      ],
+      "time": 1.0,
+      "results": [
+        {
+          "item": "ConveyorMK3",
+          "count": 3.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
     "Splitter": {
       "recipe": "Splitter",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "ingredients": [
+        {
+          "item": "IronIngot",
+          "count": 3.0
+        },
+        {
+          "item": "Gear",
+          "count": 2.0
+        },
+        {
+          "item": "CircuitBoard",
+          "count": 1.0
+        }
+      ],
+      "time": 2.0,
+      "results": [
+        {
+          "item": "Splitter",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
     "StorageMK1": {
       "recipe": "StorageMK1",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "ingredients": [
+        {
+          "item": "IronIngot",
+          "count": 4.0
+        },
+        {
+          "item": "StoneBrick",
+          "count": 4.0
+        }
+      ],
+      "time": 2.0,
+      "results": [
+        {
+          "item": "StorageMK1",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
-    "FluidStorage": {
-      "recipe": "FluidStorage",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+    "StorageMK2": {
+      "recipe": "StorageMK2",
+      "ingredients": [
+        {
+          "item": "Steel",
+          "count": 8.0
+        },
+        {
+          "item": "StoneBrick",
+          "count": 8.0
+        }
+      ],
+      "time": 4.0,
+      "results": [
+        {
+          "item": "StorageMK2",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
     "SorterMK1": {
       "recipe": "SorterMK1",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "ingredients": [
+        {
+          "item": "IronIngot",
+          "count": 1.0
+        },
+        {
+          "item": "CircuitBoard",
+          "count": 1.0
+        }
+      ],
+      "time": 1.0,
+      "results": [
+        {
+          "item": "SorterMK1",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
     "SorterMK2": {
       "recipe": "SorterMK2",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "ingredients": [
+        {
+          "item": "SorterMK1",
+          "count": 2.0
+        },
+        {
+          "item": "Motor",
+          "count": 1.0
+        }
+      ],
+      "time": 1.0,
+      "results": [
+        {
+          "item": "SorterMK2",
+          "count": 2.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "SorterMK3": {
+      "recipe": "SorterMK3",
+      "ingredients": [
+        {
+          "item": "SorterMK2",
+          "count": 2.0
+        },
+        {
+          "item": "ElectromagneticTurbine",
+          "count": 1.0
+        }
+      ],
+      "time": 1.0,
+      "results": [
+        {
+          "item": "SorterMK3",
+          "count": 2.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
     "MiningMachine": {
       "recipe": "MiningMachine",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "ingredients": [
+        {
+          "item": "IronIngot",
+          "count": 4.0
+        },
+        {
+          "item": "CircuitBoard",
+          "count": 2.0
+        },
+        {
+          "item": "Electromagnet",
+          "count": 2.0
+        },
+        {
+          "item": "Gear",
+          "count": 2.0
+        }
+      ],
+      "time": 3.0,
+      "results": [
+        {
+          "item": "MiningMachine",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
     "WaterPump": {
       "recipe": "WaterPump",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "ingredients": [
+        {
+          "item": "IronIngot",
+          "count": 8.0
+        },
+        {
+          "item": "StoneBrick",
+          "count": 4.0
+        },
+        {
+          "item": "Motor",
+          "count": 4.0
+        },
+        {
+          "item": "CircuitBoard",
+          "count": 2.0
+        }
+      ],
+      "time": 4.0,
+      "results": [
+        {
+          "item": "WaterPump",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
     "OilExtractor": {
       "recipe": "OilExtractor",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "ingredients": [
+        {
+          "item": "Steel",
+          "count": 12.0
+        },
+        {
+          "item": "StoneBrick",
+          "count": 12.0
+        },
+        {
+          "item": "CircuitBoard",
+          "count": 6.0
+        },
+        {
+          "item": "PlasmaExciter",
+          "count": 4.0
+        }
+      ],
+      "time": 8.0,
+      "results": [
+        {
+          "item": "OilExtractor",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
     "OilRefinery": {
       "recipe": "OilRefinery",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "ingredients": [
+        {
+          "item": "Steel",
+          "count": 10.0
+        },
+        {
+          "item": "StoneBrick",
+          "count": 10.0
+        },
+        {
+          "item": "CircuitBoard",
+          "count": 6.0
+        },
+        {
+          "item": "PlasmaExciter",
+          "count": 6.0
+        }
+      ],
+      "time": 6.0,
+      "results": [
+        {
+          "item": "OilRefinery",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
     "AssemblingMachineMK1": {
       "recipe": "AssemblingMachineMK1",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "ingredients": [
+        {
+          "item": "IronIngot",
+          "count": 4.0
+        },
+        {
+          "item": "Gear",
+          "count": 8.0
+        },
+        {
+          "item": "CircuitBoard",
+          "count": 4.0
+        }
+      ],
+      "time": 2.0,
+      "results": [
+        {
+          "item": "AssemblingMachineMK1",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "AssemblingMachineMK2": {
+      "recipe": "AssemblingMachineMK2",
+      "ingredients": [
+        {
+          "item": "AssemblingMachineMK1",
+          "count": 1.0
+        },
+        {
+          "item": "Graphene",
+          "count": 8.0
+        },
+        {
+          "item": "Processor",
+          "count": 4.0
+        }
+      ],
+      "time": 3.0,
+      "results": [
+        {
+          "item": "AssemblingMachineMK2",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "AssemblingMachineMK3": {
+      "recipe": "AssemblingMachineMK3",
+      "ingredients": [
+        {
+          "item": "AssemblingMachineMK2",
+          "count": 1.0
+        },
+        {
+          "item": "ParticleBroadband",
+          "count": 8.0
+        },
+        {
+          "item": "QuantumChip",
+          "count": 2.0
+        }
+      ],
+      "time": 4.0,
+      "results": [
+        {
+          "item": "AssemblingMachineMK3",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
     "Smelter": {
       "recipe": "Smelter",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "ingredients": [
+        {
+          "item": "IronIngot",
+          "count": 4.0
+        },
+        {
+          "item": "StoneBrick",
+          "count": 2.0
+        },
+        {
+          "item": "CircuitBoard",
+          "count": 4.0
+        },
+        {
+          "item": "Electromagnet",
+          "count": 2.0
+        }
+      ],
+      "time": 3.0,
+      "results": [
+        {
+          "item": "Smelter",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
     "Fractionator": {
       "recipe": "Fractionator",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "ingredients": [
+        {
+          "item": "Steel",
+          "count": 8.0
+        },
+        {
+          "item": "StoneBrick",
+          "count": 4.0
+        },
+        {
+          "item": "Glass",
+          "count": 4.0
+        },
+        {
+          "item": "Processor",
+          "count": 1.0
+        }
+      ],
+      "time": 3.0,
+      "results": [
+        {
+          "item": "Fractionator",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
     "ChemicalPlant": {
       "recipe": "ChemicalPlant",
-      "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "ingredients": [
+        {
+          "item": "Steel",
+          "count": 8.0
+        },
+        {
+          "item": "StoneBrick",
+          "count": 8.0
+        },
+        {
+          "item": "Glass",
+          "count": 8.0
+        },
+        {
+          "item": "CircuitBoard",
+          "count": 2.0
+        }
+      ],
+      "time": 5.0,
+      "results": [
+        {
+          "item": "ChemicalPlant",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     },
     "MatrixLab": {
       "recipe": "MatrixLab",
+      "ingredients": [
+        {
+          "item": "IronIngot",
+          "count": 8.0
+        },
+        {
+          "item": "Glass",
+          "count": 4.0
+        },
+        {
+          "item": "CircuitBoard",
+          "count": 4.0
+        },
+        {
+          "item": "Electromagnet",
+          "count": 4.0
+        }
+      ],
+      "time": 3.0,
+      "results": [
+        {
+          "item": "MatrixLab",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "RayReceiver": {
+      "recipe": "RayReceiver",
+      "ingredients": [
+        {
+          "item": "Steel",
+          "count": 20.0
+        },
+        {
+          "item": "HighPuritySilicon",
+          "count": 20.0
+        },
+        {
+          "item": "PhotonCombiner",
+          "count": 10.0
+        },
+        {
+          "item": "Processor",
+          "count": 5.0
+        },
+        {
+          "item": "SuperMagneticRing",
+          "count": 20.0
+        }
+      ],
+      "time": 8.0,
+      "results": [
+        {
+          "item": "RayReceiver",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "EMRailEjector": {
+      "recipe": "EMRailEjector",
+      "ingredients": [
+        {
+          "item": "Steel",
+          "count": 20.0
+        },
+        {
+          "item": "Gear",
+          "count": 20.0
+        },
+        {
+          "item": "Processor",
+          "count": 5.0
+        },
+        {
+          "item": "SuperMagneticRing",
+          "count": 10.0
+        }
+      ],
+      "time": 6.0,
+      "results": [
+        {
+          "item": "EMRailEjector",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "MiniatureParticleCollider": {
+      "recipe": "MiniatureParticleCollider",
+      "ingredients": [
+        {
+          "item": "TitaniumAlloy",
+          "count": 20.0
+        },
+        {
+          "item": "FrameMaterial",
+          "count": 20.0
+        },
+        {
+          "item": "SuperMagneticRing",
+          "count": 50.0
+        },
+        {
+          "item": "Graphene",
+          "count": 10.0
+        },
+        {
+          "item": "Processor",
+          "count": 8.0
+        }
+      ],
+      "time": 15.0,
+      "results": [
+        {
+          "item": "MiniatureParticleCollider",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "ArtificialStar": {
+      "recipe": "ArtificialStar",
+      "ingredients": [
+        {
+          "item": "TitaniumAlloy",
+          "count": 20.0
+        },
+        {
+          "item": "FrameMaterial",
+          "count": 20.0
+        },
+        {
+          "item": "AnnihilationConstraintSphere",
+          "count": 10.0
+        },
+        {
+          "item": "QuantumChip",
+          "count": 10.0
+        }
+      ],
+      "time": 30.0,
+      "results": [
+        {
+          "item": "ArtificialStar",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "Accumulator": {
+      "recipe": "Accumulator",
+      "ingredients": [
+        {
+          "item": "IronIngot",
+          "count": 6.0
+        },
+        {
+          "item": "SuperMagneticRing",
+          "count": 6.0
+        },
+        {
+          "item": "CrystalSilicon",
+          "count": 4.0
+        }
+      ],
+      "time": 5.0,
+      "results": [
+        {
+          "item": "Accumulator",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "EnergyExchanger": {
+      "recipe": "EnergyExchanger",
+      "ingredients": [
+        {
+          "item": "TitaniumAlloy",
+          "count": 40.0
+        },
+        {
+          "item": "Steel",
+          "count": 40.0
+        },
+        {
+          "item": "Processor",
+          "count": 40.0
+        },
+        {
+          "item": "ParticleContainer",
+          "count": 8.0
+        }
+      ],
+      "time": 15.0,
+      "results": [
+        {
+          "item": "EnergyExchanger",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "VerticalLaunchingSilo": {
+      "recipe": "VerticalLaunchingSilo",
+      "ingredients": [
+        {
+          "item": "TitaniumAlloy",
+          "count": 80.0
+        },
+        {
+          "item": "FrameMaterial",
+          "count": 30.0
+        },
+        {
+          "item": "GravitonLens",
+          "count": 20.0
+        },
+        {
+          "item": "QuantumChip",
+          "count": 10.0
+        }
+      ],
+      "time": 30.0,
+      "results": [
+        {
+          "item": "VerticalLaunchingSilo",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "PlanetaryLogisticsStation": {
+      "recipe": "PlanetaryLogisticsStation",
+      "ingredients": [
+        {
+          "item": "Steel",
+          "count": 40.0
+        },
+        {
+          "item": "TitaniumIngot",
+          "count": 40.0
+        },
+        {
+          "item": "Processor",
+          "count": 40.0
+        },
+        {
+          "item": "ParticleContainer",
+          "count": 20.0
+        }
+      ],
+      "time": 20.0,
+      "results": [
+        {
+          "item": "PlanetaryLogisticsStation",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "InterstellarLogisticsStation": {
+      "recipe": "InterstellarLogisticsStation",
+      "ingredients": [
+        {
+          "item": "PlanetaryLogisticsStation",
+          "count": 1.0
+        },
+        {
+          "item": "TitaniumAlloy",
+          "count": 40.0
+        },
+        {
+          "item": "ParticleContainer",
+          "count": 20.0
+        }
+      ],
+      "time": 30.0,
+      "results": [
+        {
+          "item": "InterstellarLogisticsStation",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "StorageTank": {
+      "recipe": "StorageTank",
+      "ingredients": [
+        {
+          "item": "IronIngot",
+          "count": 8.0
+        },
+        {
+          "item": "StoneBrick",
+          "count": 4.0
+        },
+        {
+          "item": "Glass",
+          "count": 4.0
+        }
+      ],
+      "time": 2.0,
+      "results": [
+        {
+          "item": "StorageTank",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "OrbitCollector": {
+      "recipe": "OrbitCollector",
+      "ingredients": [
+        {
+          "item": "InterstellarLogisticsStation",
+          "count": 1.0
+        },
+        {
+          "item": "SuperMagneticRing",
+          "count": 50.0
+        },
+        {
+          "item": "ReinforcedThruster",
+          "count": 20.0
+        },
+        {
+          "item": "FullAccumulator",
+          "count": 20.0
+        }
+      ],
+      "time": 30.0,
+      "results": [
+        {
+          "item": "OrbitCollector",
+          "count": 1.0
+        }
+      ],
+      "made_in": "AssemblingMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "IronMining": {
+      "recipe": "IronMining",
       "ingredients": [],
-      "time": 0.0,
-      "results": [],
-      "made_in": "ToDo",
-      "handcraftable": false,
+      "time": 2.0,
+      "results": [
+        {
+          "item": "IronOre",
+          "count": 1.0
+        }
+      ],
+      "made_in": "MiningMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "CopperMining": {
+      "recipe": "CopperMining",
+      "ingredients": [],
+      "time": 2.0,
+      "results": [
+        {
+          "item": "CopperOre",
+          "count": 1.0
+        }
+      ],
+      "made_in": "MiningMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "CoalMining": {
+      "recipe": "CoalMining",
+      "ingredients": [],
+      "time": 2.0,
+      "results": [
+        {
+          "item": "CoalOre",
+          "count": 1.0
+        }
+      ],
+      "made_in": "MiningMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "StoneMining": {
+      "recipe": "StoneMining",
+      "ingredients": [],
+      "time": 2.0,
+      "results": [
+        {
+          "item": "StoneOre",
+          "count": 1.0
+        }
+      ],
+      "made_in": "MiningMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "SiliconMining": {
+      "recipe": "SiliconMining",
+      "ingredients": [],
+      "time": 2.0,
+      "results": [
+        {
+          "item": "SiliconOre",
+          "count": 1.0
+        }
+      ],
+      "made_in": "MiningMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "TitaniumMining": {
+      "recipe": "TitaniumMining",
+      "ingredients": [],
+      "time": 2.0,
+      "results": [
+        {
+          "item": "TitaniumOre",
+          "count": 1.0
+        }
+      ],
+      "made_in": "MiningMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "FireIceMining": {
+      "recipe": "FireIceMining",
+      "ingredients": [],
+      "time": 2.0,
+      "results": [
+        {
+          "item": "FireIce",
+          "count": 1.0
+        }
+      ],
+      "made_in": "MiningMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "DiamondMining": {
+      "recipe": "DiamondMining",
+      "ingredients": [],
+      "time": 2.0,
+      "results": [
+        {
+          "item": "Kimberlite",
+          "count": 1.0
+        }
+      ],
+      "made_in": "MiningMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "FractalSiliconMining": {
+      "recipe": "FractalSiliconMining",
+      "ingredients": [],
+      "time": 2.0,
+      "results": [
+        {
+          "item": "FractalSilicon",
+          "count": 1.0
+        }
+      ],
+      "made_in": "MiningMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "OpticalGratingCrystalMining": {
+      "recipe": "OpticalGratingCrystalMining",
+      "ingredients": [],
+      "time": 2.0,
+      "results": [
+        {
+          "item": "OpticalGratingCrystal",
+          "count": 1.0
+        }
+      ],
+      "made_in": "MiningMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "OrganicCrystalMining": {
+      "recipe": "OrganicCrystalMining",
+      "ingredients": [],
+      "time": 2.0,
+      "results": [
+        {
+          "item": "OrganicCrystal",
+          "count": 1.0
+        }
+      ],
+      "made_in": "MiningMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "SpiniformStalagmiteCrystalMining": {
+      "recipe": "SpiniformStalagmiteCrystalMining",
+      "ingredients": [],
+      "time": 2.0,
+      "results": [
+        {
+          "item": "SpiniformStalagmiteCrystal",
+          "count": 1.0
+        }
+      ],
+      "made_in": "MiningMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "UnipolarMagnetMining": {
+      "recipe": "UnipolarMagnetMining",
+      "ingredients": [],
+      "time": 2.0,
+      "results": [
+        {
+          "item": "UnipolarMagnet",
+          "count": 1.0
+        }
+      ],
+      "made_in": "MiningMachine",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "OilExtraction": {
+      "recipe": "OilExtraction",
+      "ingredients": [],
+      "time": 1.0,
+      "results": [
+        {
+          "item": "CrudeOil",
+          "count": 1.0
+        }
+      ],
+      "made_in": "OilExtractor",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "CriticalPhotonReceiving": {
+      "recipe": "CriticalPhotonReceiving",
+      "ingredients": [],
+      "time": 1.0,
+      "results": [
+        {
+          "item": "CriticalPhoton",
+          "count": 1.0
+        }
+      ],
+      "made_in": "RayReceiver",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "WaterPumping": {
+      "recipe": "WaterPumping",
+      "ingredients": [],
+      "time": 1.2,
+      "results": [
+        {
+          "item": "Water",
+          "count": 1.0
+        }
+      ],
+      "made_in": "WaterPump",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "SulfuricAcidPumping": {
+      "recipe": "SulfuricAcidPumping",
+      "ingredients": [],
+      "time": 1.2,
+      "results": [
+        {
+          "item": "SulfuricAcid",
+          "count": 1.0
+        }
+      ],
+      "made_in": "WaterPump",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "GasGiantCollection": {
+      "recipe": "GasGiantCollection",
+      "ingredients": [],
+      "time": 8.0,
+      "results": [
+        {
+          "item": "Hydrogen",
+          "count": 4.0
+        },
+        {
+          "item": "Deuterium",
+          "count": 0.0
+        }
+      ],
+      "made_in": "OrbitCollector",
+      "handcraftable": true,
+      "unlocked_by": "DysonSphereProgram"
+    },
+    "IceGiantCollection": {
+      "recipe": "IceGiantCollection",
+      "ingredients": [],
+      "time": 8.0,
+      "results": [
+        {
+          "item": "FireIce",
+          "count": 2.0
+        },
+        {
+          "item": "Hydrogen",
+          "count": 1.0
+        }
+      ],
+      "made_in": "OrbitCollector",
+      "handcraftable": true,
       "unlocked_by": "DysonSphereProgram"
     }
   },
   "production_methods": {
-    "IronOre": [],
-    "CopperOre": [],
-    "StoneOre": [],
-    "CoalOre": [],
-    "SiliconOre": [],
-    "TitaniumOre": [],
-    "Water": [],
-    "CrudeOil": [],
+    "IronOre": [
+      "IronMining"
+    ],
+    "CopperOre": [
+      "CopperMining"
+    ],
+    "StoneOre": [
+      "StoneMining"
+    ],
+    "CoalOre": [
+      "CoalMining"
+    ],
+    "SiliconOre": [
+      "SiliconOreFromStone",
+      "SiliconMining"
+    ],
+    "TitaniumOre": [
+      "TitaniumMining"
+    ],
+    "Water": [
+      "WaterPumping"
+    ],
+    "CrudeOil": [
+      "OilExtraction"
+    ],
     "Hydrogen": [
       "PlasmaRefining",
       "GrapheneFromFireIce",
-      "XRayCracking"
+      "XRayCracking",
+      "DiracInversion",
+      "DeuteriumFractionation",
+      "GasGiantCollection",
+      "IceGiantCollection"
     ],
-    "Deuterium": [],
-    "Antimatter": [],
-    "Kimberlite": [],
+    "Deuterium": [
+      "DeuteriumInParticleCollider",
+      "DeuteriumFractionation",
+      "GasGiantCollection"
+    ],
+    "Antimatter": [
+      "DiracInversion"
+    ],
+    "Kimberlite": [
+      "DiamondMining"
+    ],
     "IronIngot": [
       "IronSmelting"
     ],
@@ -1404,22 +3673,34 @@
       "StoneSmelting"
     ],
     "EnergeticGraphite": [
-      "GraphiteSmelting"
+      "GraphiteSmelting",
+      "XRayCracking"
     ],
     "HighPuritySilicon": [
       "SiliconSmelting"
     ],
-    "TitaniumIngot": [],
-    "SufuricAcid": [],
+    "TitaniumIngot": [
+      "TitaniumSmelting"
+    ],
+    "SulfuricAcid": [
+      "SulfuricAcidFromStone",
+      "SulfuricAcidPumping"
+    ],
     "RefinedOil": [
       "PlasmaRefining"
     ],
     "HydrogenFuelRod": [
       "HydrogenFuelRod"
     ],
-    "DeuteronFuelRod": [],
-    "AntimatterFuelRod": [],
-    "FractalSilicon": [],
+    "DeuteronFuelRod": [
+      "DeuteronFuelRod"
+    ],
+    "AntimatterFuelRod": [
+      "AntimatterFuelRod"
+    ],
+    "FractalSilicon": [
+      "FractalSiliconMining"
+    ],
     "Magnet": [
       "MagnetSmelting"
     ],
@@ -1437,103 +3718,269 @@
       "CrystalSiliconFromIngot",
       "CrystalSiliconFromFractal"
     ],
-    "TitaniumAlloy": [],
-    "FireIce": [],
+    "TitaniumAlloy": [
+      "TitaniumAlloy"
+    ],
+    "FireIce": [
+      "FireIceMining",
+      "IceGiantCollection"
+    ],
     "Plastic": [
       "Plastic"
     ],
     "OrganicCrystal": [
       "OrganicCrystalFromWood",
-      "OrganicCrystalFromPlastic"
+      "OrganicCrystalFromPlastic",
+      "OrganicCrystalMining"
     ],
     "Graphene": [
       "GrapheneFromFireIce",
-      "GrapheneFromGraphiteAndSulfuric",
-      "XRayCracking"
+      "GrapheneFromGraphiteAndSulfuric"
     ],
-    "Thruster": [],
-    "OpticalGratingCrystal": [],
+    "Thruster": [
+      "Thruster"
+    ],
+    "OpticalGratingCrystal": [
+      "OpticalGratingCrystalMining"
+    ],
     "Steel": [
       "SteelSmelting"
     ],
-    "CircuitBoard": [],
-    "Prism": [],
-    "Motor": [],
-    "MicrocrystallineComponent": [],
-    "CasimirCrystal": [],
-    "StrangeMatter": [],
-    "TitaniumCrystal": [],
-    "CarbonNanotube": [],
-    "ReinforcedThruster": [],
-    "SpiniformStalagmiteCrystal": [],
-    "Gear": [],
-    "PlasmaExciter": [],
-    "PhotonCombiner": [],
-    "ElectromagneticTurbine": [],
-    "Processor": [],
-    "AnnihilationConstraintSphere": [],
-    "TitaniumGlass": [],
-    "ParticleBroadband": [],
-    "LogisticsDrone": [],
-    "UnipolarMagnet": [],
-    "Foundation": [],
-    "CriticalPhoton": [],
-    "ParticleContainer": [],
-    "SuperMagneticRing": [],
-    "GravitonLens": [],
-    "SpaceWarper": [],
-    "PlaneFilter": [],
-    "QuantumChip": [],
-    "LogisticsVessel": [],
+    "CircuitBoard": [
+      "CircuitBoard"
+    ],
+    "Prism": [
+      "Prism"
+    ],
+    "Motor": [
+      "Motor"
+    ],
+    "MicrocrystallineComponent": [
+      "MicrocrystallineComponent"
+    ],
+    "CasimirCrystal": [
+      "CasimirCrystalFromTitanium",
+      "CasimirCrystalFromOpticalGratingCrystal"
+    ],
+    "StrangeMatter": [
+      "StrangeMatter"
+    ],
+    "TitaniumCrystal": [
+      "TitaniumCrystal"
+    ],
+    "CarbonNanotube": [
+      "CarbonNanotubeFromGraphene",
+      "CarbonNanotubeFromSpiniform"
+    ],
+    "ReinforcedThruster": [
+      "ReinforcedThruster"
+    ],
+    "SpiniformStalagmiteCrystal": [
+      "SpiniformStalagmiteCrystalMining"
+    ],
+    "Gear": [
+      "Gear"
+    ],
+    "PlasmaExciter": [
+      "PlasmaExciter"
+    ],
+    "PhotonCombiner": [
+      "PhotonCombinerFromPrism",
+      "PhotonCombinerFromCrystal"
+    ],
+    "ElectromagneticTurbine": [
+      "ElectromagneticTurbine"
+    ],
+    "Processor": [
+      "Processor"
+    ],
+    "AnnihilationConstraintSphere": [
+      "AnnihilationConstraintSphere"
+    ],
+    "TitaniumGlass": [
+      "TitaniumGlass"
+    ],
+    "ParticleBroadband": [
+      "ParticleBroadband"
+    ],
+    "LogisticsDrone": [
+      "LogisticsDrone"
+    ],
+    "UnipolarMagnet": [
+      "UnipolarMagnetMining"
+    ],
+    "Foundation": [
+      "Foundation"
+    ],
+    "CriticalPhoton": [
+      "CriticalPhotonReceiving"
+    ],
+    "ParticleContainer": [
+      "ParticleContainerFromEMTurbine",
+      "ParticleContainerFromUnipolar"
+    ],
+    "SuperMagneticRing": [
+      "SuperMagneticRing"
+    ],
+    "GravitonLens": [
+      "GravitonLens"
+    ],
+    "SpaceWarper": [
+      "SpaceWarperFromLens",
+      "SpaceWarperFromMatrix"
+    ],
+    "PlaneFilter": [
+      "PlaneFilter"
+    ],
+    "QuantumChip": [
+      "QuantumChip"
+    ],
+    "LogisticsVessel": [
+      "LogisticsVessel"
+    ],
     "Log": [],
-    "ElectromagneticMatrix": [],
-    "EnergyMatrix": [],
-    "StructureMatrix": [],
-    "InformationMatrix": [],
-    "GravityMatrix": [],
-    "UniverseMatrix": [],
+    "ElectromagneticMatrix": [
+      "ElectromagneticMatrix"
+    ],
+    "EnergyMatrix": [
+      "EnergyMatrix"
+    ],
+    "StructureMatrix": [
+      "StructureMatrix"
+    ],
+    "InformationMatrix": [
+      "InformationMatrix"
+    ],
+    "GravityMatrix": [
+      "GravityMatrix"
+    ],
+    "UniverseMatrix": [
+      "UniverseMatrix"
+    ],
     "SolarSail": [],
-    "FrameMaterial": [],
-    "DysonSphereComponent": [],
-    "SmallCarrierRocket": [],
+    "FrameMaterial": [
+      "FrameMaterial"
+    ],
+    "DysonSphereComponent": [
+      "DysonSphereComponent"
+    ],
+    "SmallCarrierRocket": [
+      "SmallCarrierRocket"
+    ],
     "PlantFuel": [],
-    "TeslaTower": [],
-    "WirelessPowerTower": [],
-    "SatelliteSubstation": [],
-    "WindTurbine": [],
-    "ThermalPowerStation": [],
-    "SolarPanel": [],
+    "TeslaTower": [
+      "TeslaTower"
+    ],
+    "WirelessPowerTower": [
+      "WirelessPowerTower"
+    ],
+    "SatelliteSubstation": [
+      "SatelliteSubstation"
+    ],
+    "WindTurbine": [
+      "WindTurbine"
+    ],
+    "ThermalPowerStation": [
+      "ThermalPowerStation"
+    ],
+    "SolarPanel": [
+      "SolarPanel"
+    ],
     "MiniFusionPowerStation": [],
-    "Accumulator": [],
+    "Accumulator": [
+      "Accumulator"
+    ],
     "FullAccumulator": [],
-    "EnergyExchanger": [],
-    "RayReceiver": [],
-    "ArtificialStar": [],
-    "ConveyorMK1": [],
-    "ConveyorMK2": [],
-    "ConveyorMK3": [],
-    "Splitter": [],
-    "StorageMK1": [],
-    "StorageMK2": [],
-    "PlanetaryLogisticsStation": [],
-    "InterstellarLogisticsStation": [],
-    "OrbitCollector": [],
-    "EMRailEjector": [],
-    "SorterMK1": [],
-    "SorterMK2": [],
-    "SorterMK3": [],
-    "MiningMachine": [],
-    "OilExtractor": [],
-    "OilRefinery": [],
-    "MiniatureParticleCollider": [],
-    "MatrixLab": [],
-    "VerticalLaunchingSilo": [],
-    "AssemblingMachineMK1": [],
-    "AssemblingMachineMK2": [],
-    "AssemblingMachineMK3": [],
-    "Smelter": [],
-    "ChemicalPlant": [],
-    "Fractionator": []
+    "EnergyExchanger": [
+      "EnergyExchanger"
+    ],
+    "RayReceiver": [
+      "RayReceiver"
+    ],
+    "ArtificialStar": [
+      "ArtificialStar"
+    ],
+    "ConveyorMK1": [
+      "ConveyorMK1"
+    ],
+    "ConveyorMK2": [
+      "ConveyorMK2"
+    ],
+    "ConveyorMK3": [
+      "ConveyorMK3"
+    ],
+    "Splitter": [
+      "Splitter"
+    ],
+    "StorageMK1": [
+      "StorageMK1"
+    ],
+    "StorageMK2": [
+      "StorageMK2"
+    ],
+    "PlanetaryLogisticsStation": [
+      "PlanetaryLogisticsStation"
+    ],
+    "InterstellarLogisticsStation": [
+      "InterstellarLogisticsStation"
+    ],
+    "OrbitCollector": [
+      "OrbitCollector"
+    ],
+    "EMRailEjector": [
+      "EMRailEjector"
+    ],
+    "SorterMK1": [
+      "SorterMK1"
+    ],
+    "SorterMK2": [
+      "SorterMK2"
+    ],
+    "SorterMK3": [
+      "SorterMK3"
+    ],
+    "MiningMachine": [
+      "MiningMachine"
+    ],
+    "OilExtractor": [
+      "OilExtractor"
+    ],
+    "OilRefinery": [
+      "OilRefinery"
+    ],
+    "MiniatureParticleCollider": [
+      "MiniatureParticleCollider"
+    ],
+    "MatrixLab": [
+      "MatrixLab"
+    ],
+    "VerticalLaunchingSilo": [
+      "VerticalLaunchingSilo"
+    ],
+    "AssemblingMachineMK1": [
+      "AssemblingMachineMK1"
+    ],
+    "AssemblingMachineMK2": [
+      "AssemblingMachineMK2"
+    ],
+    "AssemblingMachineMK3": [
+      "AssemblingMachineMK3"
+    ],
+    "Smelter": [
+      "Smelter"
+    ],
+    "ChemicalPlant": [
+      "ChemicalPlant"
+    ],
+    "Fractionator": [
+      "Fractionator"
+    ],
+    "WaterPump": [
+      "WaterPump"
+    ],
+    "StorageTank": [
+      "StorageTank"
+    ]
   },
   "consumption_methods": {
     "IronOre": [
@@ -1545,7 +3992,9 @@
     ],
     "StoneOre": [
       "StoneSmelting",
-      "GlassSmelting"
+      "GlassSmelting",
+      "SiliconOreFromStone",
+      "SulfuricAcidFromStone"
     ],
     "CoalOre": [
       "GraphiteSmelting"
@@ -1553,142 +4002,429 @@
     "SiliconOre": [
       "SiliconSmelting"
     ],
-    "TitaniumOre": [],
+    "TitaniumOre": [
+      "TitaniumSmelting"
+    ],
     "Water": [
       "OrganicCrystalFromWood",
-      "OrganicCrystalFromPlastic"
+      "OrganicCrystalFromPlastic",
+      "SulfuricAcidFromStone",
+      "TitaniumGlass"
     ],
     "CrudeOil": [
       "PlasmaRefining"
     ],
     "Hydrogen": [
       "XRayCracking",
-      "HydrogenFuelRod"
+      "HydrogenFuelRod",
+      "EnergyMatrix",
+      "CasimirCrystalFromTitanium",
+      "CasimirCrystalFromOpticalGratingCrystal",
+      "DeuteriumInParticleCollider",
+      "DeuteriumFractionation",
+      "AntimatterFuelRod"
     ],
-    "Deuterium": [],
-    "Antimatter": [],
+    "Deuterium": [
+      "DeuteronFuelRod",
+      "StrangeMatter"
+    ],
+    "Antimatter": [
+      "UniverseMatrix",
+      "AntimatterFuelRod"
+    ],
     "Kimberlite": [
       "DiamondFromKimberlite"
     ],
     "IronIngot": [
-      "SteelSmelting"
+      "SteelSmelting",
+      "CircuitBoard",
+      "Gear",
+      "LogisticsDrone",
+      "Motor",
+      "StrangeMatter",
+      "TeslaTower",
+      "WindTurbine",
+      "ThermalPowerStation",
+      "ConveyorMK1",
+      "Splitter",
+      "StorageMK1",
+      "SorterMK1",
+      "MiningMachine",
+      "WaterPump",
+      "AssemblingMachineMK1",
+      "Smelter",
+      "MatrixLab",
+      "Accumulator",
+      "StorageTank"
     ],
     "CopperIngot": [
-      "Electromagnet"
+      "Electromagnet",
+      "CircuitBoard",
+      "MicrocrystallineComponent",
+      "Thruster",
+      "ParticleContainerFromEMTurbine",
+      "ParticleContainerFromUnipolar",
+      "SolarPanel"
     ],
-    "StoneBrick": [],
+    "StoneBrick": [
+      "Foundation",
+      "ThermalPowerStation",
+      "StorageMK1",
+      "StorageMK2",
+      "WaterPump",
+      "OilExtractor",
+      "OilRefinery",
+      "Smelter",
+      "Fractionator",
+      "ChemicalPlant",
+      "StorageTank"
+    ],
     "EnergeticGraphite": [
       "Plastic",
       "GrapheneFromGraphiteAndSulfuric",
-      "DiamondFromGraphite"
+      "DiamondFromGraphite",
+      "EnergyMatrix",
+      "SuperMagneticRing"
     ],
     "HighPuritySilicon": [
-      "CrystalSiliconFromIngot"
+      "CrystalSiliconFromIngot",
+      "MicrocrystallineComponent",
+      "FrameMaterial",
+      "SolarPanel",
+      "RayReceiver"
     ],
     "TitaniumIngot": [
-      "HydrogenFuelRod"
+      "HydrogenFuelRod",
+      "TitaniumGlass",
+      "TitaniumAlloy",
+      "TitaniumCrystal",
+      "CarbonNanotubeFromGraphene",
+      "PlanetaryLogisticsStation"
     ],
-    "SufuricAcid": [],
+    "SulfuricAcid": [
+      "GrapheneFromGraphiteAndSulfuric",
+      "TitaniumAlloy"
+    ],
     "RefinedOil": [
       "Plastic",
-      "GrapheneFromGraphiteAndSulfuric",
       "XRayCracking",
-      "OrganicCrystalFromPlastic"
+      "OrganicCrystalFromPlastic",
+      "SulfuricAcidFromStone"
     ],
     "HydrogenFuelRod": [],
-    "DeuteronFuelRod": [],
+    "DeuteronFuelRod": [
+      "SmallCarrierRocket"
+    ],
     "AntimatterFuelRod": [],
     "FractalSilicon": [
       "CrystalSiliconFromFractal"
     ],
     "Magnet": [
-      "Electromagnet"
+      "Electromagnet",
+      "SuperMagneticRing"
     ],
-    "Electromagnet": [],
-    "Glass": [],
-    "Diamond": [],
-    "CrystalSilicon": [],
-    "TitaniumAlloy": [],
+    "Electromagnet": [
+      "PlasmaExciter",
+      "ElectromagneticMatrix",
+      "Motor",
+      "ElectromagneticTurbine",
+      "TeslaTower",
+      "WindTurbine",
+      "ThermalPowerStation",
+      "MiningMachine",
+      "Smelter",
+      "MatrixLab"
+    ],
+    "Glass": [
+      "Prism",
+      "TitaniumGlass",
+      "Fractionator",
+      "ChemicalPlant",
+      "MatrixLab",
+      "StorageTank"
+    ],
+    "Diamond": [
+      "StructureMatrix",
+      "GravitonLens"
+    ],
+    "CrystalSilicon": [
+      "ParticleBroadband",
+      "Accumulator"
+    ],
+    "TitaniumAlloy": [
+      "ReinforcedThruster",
+      "DeuteronFuelRod",
+      "AntimatterFuelRod",
+      "FrameMaterial",
+      "LogisticsVessel",
+      "MiniatureParticleCollider",
+      "ArtificialStar",
+      "EnergyExchanger",
+      "VerticalLaunchingSilo",
+      "InterstellarLogisticsStation"
+    ],
     "FireIce": [
       "GrapheneFromFireIce"
     ],
     "Plastic": [
-      "OrganicCrystalFromPlastic"
+      "OrganicCrystalFromPlastic",
+      "ParticleBroadband"
     ],
-    "OrganicCrystal": [],
-    "Graphene": [],
-    "Thruster": [],
-    "OpticalGratingCrystal": [],
-    "Steel": [],
-    "CircuitBoard": [],
-    "Prism": [],
-    "Motor": [],
-    "MicrocrystallineComponent": [],
-    "CasimirCrystal": [],
-    "StrangeMatter": [],
-    "TitaniumCrystal": [],
-    "CarbonNanotube": [],
-    "ReinforcedThruster": [],
-    "SpiniformStalagmiteCrystal": [],
-    "Gear": [],
-    "PlasmaExciter": [],
-    "PhotonCombiner": [],
-    "ElectromagneticTurbine": [],
-    "Processor": [],
-    "AnnihilationConstraintSphere": [],
-    "TitaniumGlass": [],
-    "ParticleBroadband": [],
+    "OrganicCrystal": [
+      "TitaniumCrystal"
+    ],
+    "Graphene": [
+      "CasimirCrystalFromTitanium",
+      "CasimirCrystalFromOpticalGratingCrystal",
+      "CarbonNanotubeFromGraphene",
+      "ParticleContainerFromEMTurbine",
+      "ConveyorMK3",
+      "AssemblingMachineMK2",
+      "MiniatureParticleCollider"
+    ],
+    "Thruster": [
+      "LogisticsDrone"
+    ],
+    "OpticalGratingCrystal": [
+      "PhotonCombinerFromCrystal",
+      "CasimirCrystalFromOpticalGratingCrystal"
+    ],
+    "Steel": [
+      "Foundation",
+      "Thruster",
+      "TitaniumAlloy",
+      "StorageMK2",
+      "OilExtractor",
+      "OilRefinery",
+      "Fractionator",
+      "ChemicalPlant",
+      "RayReceiver",
+      "EMRailEjector",
+      "EnergyExchanger",
+      "PlanetaryLogisticsStation"
+    ],
+    "CircuitBoard": [
+      "Processor",
+      "PhotonCombinerFromPrism",
+      "PhotonCombinerFromCrystal",
+      "ElectromagneticMatrix",
+      "SolarPanel",
+      "Splitter",
+      "SorterMK1",
+      "MiningMachine",
+      "WaterPump",
+      "OilExtractor",
+      "OilRefinery",
+      "AssemblingMachineMK1",
+      "Smelter",
+      "ChemicalPlant",
+      "MatrixLab"
+    ],
+    "Prism": [
+      "PlasmaExciter",
+      "PhotonCombinerFromPrism"
+    ],
+    "Motor": [
+      "ElectromagneticTurbine",
+      "SorterMK2",
+      "WaterPump"
+    ],
+    "MicrocrystallineComponent": [
+      "Processor"
+    ],
+    "CasimirCrystal": [
+      "PlaneFilter"
+    ],
+    "StrangeMatter": [
+      "GravitonLens"
+    ],
+    "TitaniumCrystal": [
+      "StructureMatrix",
+      "CasimirCrystalFromTitanium"
+    ],
+    "CarbonNanotube": [
+      "ParticleBroadband",
+      "FrameMaterial"
+    ],
+    "ReinforcedThruster": [
+      "LogisticsVessel",
+      "OrbitCollector"
+    ],
+    "SpiniformStalagmiteCrystal": [
+      "CarbonNanotubeFromSpiniform"
+    ],
+    "Gear": [
+      "Motor",
+      "WindTurbine",
+      "ThermalPowerStation",
+      "ConveyorMK1",
+      "Splitter",
+      "MiningMachine",
+      "AssemblingMachineMK1",
+      "EMRailEjector"
+    ],
+    "PlasmaExciter": [
+      "WirelessPowerTower",
+      "OilExtractor",
+      "OilRefinery"
+    ],
+    "PhotonCombiner": [
+      "RayReceiver"
+    ],
+    "ElectromagneticTurbine": [
+      "ReinforcedThruster",
+      "ParticleContainerFromEMTurbine",
+      "SuperMagneticRing",
+      "ConveyorMK2",
+      "SorterMK3"
+    ],
+    "Processor": [
+      "InformationMatrix",
+      "QuantumChip",
+      "AnnihilationConstraintSphere",
+      "DysonSphereComponent",
+      "LogisticsDrone",
+      "LogisticsVessel",
+      "AssemblingMachineMK2",
+      "Fractionator",
+      "RayReceiver",
+      "EMRailEjector",
+      "MiniatureParticleCollider",
+      "EnergyExchanger",
+      "PlanetaryLogisticsStation"
+    ],
+    "AnnihilationConstraintSphere": [
+      "AntimatterFuelRod",
+      "ArtificialStar"
+    ],
+    "TitaniumGlass": [
+      "PlaneFilter"
+    ],
+    "ParticleBroadband": [
+      "InformationMatrix",
+      "AssemblingMachineMK3"
+    ],
     "LogisticsDrone": [],
-    "UnipolarMagnet": [],
+    "UnipolarMagnet": [
+      "ParticleContainerFromUnipolar"
+    ],
     "Foundation": [],
-    "CriticalPhoton": [],
-    "ParticleContainer": [],
-    "SuperMagneticRing": [],
-    "GravitonLens": [],
+    "CriticalPhoton": [
+      "DiracInversion"
+    ],
+    "ParticleContainer": [
+      "AnnihilationConstraintSphere",
+      "StrangeMatter",
+      "EnergyExchanger",
+      "PlanetaryLogisticsStation",
+      "InterstellarLogisticsStation"
+    ],
+    "SuperMagneticRing": [
+      "DeuteronFuelRod",
+      "SatelliteSubstation",
+      "ConveyorMK3",
+      "RayReceiver",
+      "EMRailEjector",
+      "MiniatureParticleCollider",
+      "Accumulator",
+      "OrbitCollector"
+    ],
+    "GravitonLens": [
+      "GravityMatrix",
+      "SpaceWarperFromLens",
+      "VerticalLaunchingSilo"
+    ],
     "SpaceWarper": [],
-    "PlaneFilter": [],
-    "QuantumChip": [],
+    "PlaneFilter": [
+      "QuantumChip"
+    ],
+    "QuantumChip": [
+      "GravityMatrix",
+      "SmallCarrierRocket",
+      "AssemblingMachineMK3",
+      "ArtificialStar",
+      "VerticalLaunchingSilo"
+    ],
     "LogisticsVessel": [],
     "Log": [
       "OrganicCrystalFromWood"
     ],
-    "ElectromagneticMatrix": [],
-    "EnergyMatrix": [],
-    "StructureMatrix": [],
-    "InformationMatrix": [],
-    "GravityMatrix": [],
+    "ElectromagneticMatrix": [
+      "UniverseMatrix"
+    ],
+    "EnergyMatrix": [
+      "UniverseMatrix"
+    ],
+    "StructureMatrix": [
+      "UniverseMatrix"
+    ],
+    "InformationMatrix": [
+      "UniverseMatrix"
+    ],
+    "GravityMatrix": [
+      "UniverseMatrix",
+      "SpaceWarperFromMatrix"
+    ],
     "UniverseMatrix": [],
     "SolarSail": [],
-    "FrameMaterial": [],
-    "DysonSphereComponent": [],
+    "FrameMaterial": [
+      "DysonSphereComponent",
+      "SatelliteSubstation",
+      "MiniatureParticleCollider",
+      "ArtificialStar",
+      "VerticalLaunchingSilo"
+    ],
+    "DysonSphereComponent": [
+      "SmallCarrierRocket"
+    ],
     "SmallCarrierRocket": [],
     "PlantFuel": [
       "OrganicCrystalFromWood"
     ],
-    "TeslaTower": [],
-    "WirelessPowerTower": [],
+    "TeslaTower": [
+      "WirelessPowerTower"
+    ],
+    "WirelessPowerTower": [
+      "SatelliteSubstation"
+    ],
     "SatelliteSubstation": [],
     "WindTurbine": [],
     "ThermalPowerStation": [],
-    "SolarPanel": [],
+    "SolarPanel": [
+      "DysonSphereComponent"
+    ],
     "MiniFusionPowerStation": [],
     "Accumulator": [],
-    "FullAccumulator": [],
+    "FullAccumulator": [
+      "OrbitCollector"
+    ],
     "EnergyExchanger": [],
     "RayReceiver": [],
     "ArtificialStar": [],
-    "ConveyorMK1": [],
-    "ConveyorMK2": [],
+    "ConveyorMK1": [
+      "ConveyorMK2"
+    ],
+    "ConveyorMK2": [
+      "ConveyorMK3"
+    ],
     "ConveyorMK3": [],
     "Splitter": [],
     "StorageMK1": [],
     "StorageMK2": [],
-    "PlanetaryLogisticsStation": [],
-    "InterstellarLogisticsStation": [],
+    "PlanetaryLogisticsStation": [
+      "InterstellarLogisticsStation"
+    ],
+    "InterstellarLogisticsStation": [
+      "OrbitCollector"
+    ],
     "OrbitCollector": [],
     "EMRailEjector": [],
-    "SorterMK1": [],
-    "SorterMK2": [],
+    "SorterMK1": [
+      "SorterMK2"
+    ],
+    "SorterMK2": [
+      "SorterMK3"
+    ],
     "SorterMK3": [],
     "MiningMachine": [],
     "OilExtractor": [],
@@ -1696,11 +4432,17 @@
     "MiniatureParticleCollider": [],
     "MatrixLab": [],
     "VerticalLaunchingSilo": [],
-    "AssemblingMachineMK1": [],
-    "AssemblingMachineMK2": [],
+    "AssemblingMachineMK1": [
+      "AssemblingMachineMK2"
+    ],
+    "AssemblingMachineMK2": [
+      "AssemblingMachineMK3"
+    ],
     "AssemblingMachineMK3": [],
     "Smelter": [],
     "ChemicalPlant": [],
-    "Fractionator": []
+    "Fractionator": [],
+    "WaterPump": [],
+    "StorageTank": []
   }
 }
