@@ -6,24 +6,23 @@ a recipe viewer for Dyson Sphere Program
 
 ## How to Use
 
-Left-click on an item to see all the ways to produce it. Right-click to see all the ways to consume it.
-(Fans of JEI will recognize these controls.)
+By default, usage links are on, so all items come with helpful links for ways to produce and consume them.
 
-Most recipes are NYI because it takes a long time to input them, so this tool is more-or-less useless right now.
-Sorry... but feel free to open a PR and add them!
+If you like, you can disable those links with the slider in the upper-right. In this mode,
+left-click on an item to see all the ways to produce it and right-click to see all the ways to consume it.
+(Fans of JEI will recognize these controls.)
 
 In the future I hope to add:
 
-- A way to save recipes and pin them to the side somehow
 - Technology tree (It knows about the whole tech tree, but just doesn't display it)
+- Item info (burn energy, stack size...)
+- A search bar
 
 ## How to Contribute
 
 1) Have Rust, Nodejs, and Typescript installed.
 2) `git clone` this
 3) `cargo run` the `/generator` folder to generate `dsp.json` and `dsp.d.ts`
-
-Check out the `help-wanted` issue label! (Most of it is just grindy slow data copying.)
 
 ### Repository Structure
 
