@@ -20,7 +20,7 @@ pub enum Item {
     Kimberlite,
     IronIngot,
     CopperIngot,
-    StoneBrick,
+    Stone,
     EnergeticGraphite,
     HighPuritySilicon,
     TitaniumIngot,

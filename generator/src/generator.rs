@@ -132,7 +132,7 @@ impl RecipeEntry {
                 Recipe::StoneSmelting => PartialRecipeEntry {
                     ingredients: vec![is(Item::StoneOre, 1)],
                     time: 1.00,
-                    results: vec![is(Item::StoneBrick, 1)],
+                    results: vec![is(Item::Stone, 1)],
                     made_in: Producer::Smelter,
                     handcraftable: true,
                     unlocked_by: Technology::DysonSphereProgram,
@@ -221,7 +221,7 @@ impl RecipeEntry {
                 Recipe::OilExtractor => PartialRecipeEntry {
                     ingredients: vec![
                         is(Item::Steel, 12),
-                        is(Item::StoneBrick, 12),
+                        is(Item::Stone, 12),
                         is(Item::CircuitBoard, 6),
                         is(Item::PlasmaExciter, 4),
                     ],
@@ -234,7 +234,7 @@ impl RecipeEntry {
                 Recipe::OilRefinery => PartialRecipeEntry {
                     ingredients: vec![
                         is(Item::Steel, 10),
-                        is(Item::StoneBrick, 10),
+                        is(Item::Stone, 10),
                         is(Item::CircuitBoard, 6),
                         is(Item::PlasmaExciter, 6),
                     ],
@@ -298,7 +298,7 @@ impl RecipeEntry {
                 Recipe::ChemicalPlant => PartialRecipeEntry {
                     ingredients: vec![
                         is(Item::Steel, 8),
-                        is(Item::StoneBrick, 8),
+                        is(Item::Stone, 8),
                         is(Item::Glass, 8),
                         is(Item::CircuitBoard, 2),
                     ],
@@ -580,7 +580,7 @@ impl RecipeEntry {
                 Recipe::WaterPump => PartialRecipeEntry {
                     ingredients: vec![
                         is(Item::IronIngot, 8),
-                        is(Item::StoneBrick, 4),
+                        is(Item::Stone, 4),
                         is(Item::Motor, 4),
                         is(Item::CircuitBoard, 2),
                     ],
@@ -648,7 +648,7 @@ impl RecipeEntry {
                 Recipe::Smelter => PartialRecipeEntry {
                     ingredients: vec![
                         is(Item::IronIngot, 4),
-                        is(Item::StoneBrick, 2),
+                        is(Item::Stone, 2),
                         is(Item::CircuitBoard, 4),
                         is(Item::Electromagnet, 2),
                     ],
@@ -717,7 +717,7 @@ impl RecipeEntry {
                 Recipe::ThermalPowerStation => PartialRecipeEntry {
                     ingredients: vec![
                         is(Item::IronIngot, 10),
-                        is(Item::StoneBrick, 4),
+                        is(Item::Stone, 4),
                         is(Item::Gear, 4),
                         is(Item::Electromagnet, 4),
                     ],
@@ -947,7 +947,7 @@ impl RecipeEntry {
                     unlocked_by: Technology::DysonSphereProgram,
                 },
                 Recipe::StorageMK1 => PartialRecipeEntry {
-                    ingredients: vec![is(Item::IronIngot, 4), is(Item::StoneBrick, 4)],
+                    ingredients: vec![is(Item::IronIngot, 4), is(Item::Stone, 4)],
                     time: 2.00,
                     results: vec![is(Item::StorageMK1, 1)],
                     made_in: Producer::AssemblingMachine,
@@ -994,7 +994,7 @@ impl RecipeEntry {
                     unlocked_by: Technology::DysonSphereProgram,
                 },
                 Recipe::StorageMK2 => PartialRecipeEntry {
-                    ingredients: vec![is(Item::Steel, 8), is(Item::StoneBrick, 8)],
+                    ingredients: vec![is(Item::Steel, 8), is(Item::Stone, 8)],
                     time: 4.00,
                     results: vec![is(Item::StorageMK2, 1)],
                     made_in: Producer::AssemblingMachine,
@@ -1146,7 +1146,7 @@ impl RecipeEntry {
                 Recipe::Fractionator => PartialRecipeEntry {
                     ingredients: vec![
                         is(Item::Steel, 8),
-                        is(Item::StoneBrick, 4),
+                        is(Item::Stone, 4),
                         is(Item::Glass, 4),
                         is(Item::Processor, 1),
                     ],
@@ -1170,7 +1170,7 @@ impl RecipeEntry {
                     unlocked_by: Technology::DysonSphereProgram,
                 },
                 Recipe::Foundation => PartialRecipeEntry {
-                    ingredients: vec![is(Item::StoneBrick, 3), is(Item::Steel, 1)],
+                    ingredients: vec![is(Item::Stone, 3), is(Item::Steel, 1)],
                     time: 1.00,
                     results: vec![is(Item::Foundation, 1)],
                     made_in: Producer::AssemblingMachine,
@@ -1180,7 +1180,7 @@ impl RecipeEntry {
                 Recipe::StorageTank => PartialRecipeEntry {
                     ingredients: vec![
                         is(Item::IronIngot, 8),
-                        is(Item::StoneBrick, 4),
+                        is(Item::Stone, 4),
                         is(Item::Glass, 4),
                     ],
                     time: 2.00,

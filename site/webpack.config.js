@@ -30,6 +30,7 @@ module.exports = {
             patterns: [
                 { from: "src/*.html", to: "[name].[ext]" },
                 { from: "src/*.css", to: "[name].[ext]" },
+                { from: "src/img/*.png", to: "img/[name].[ext]" },
                 { from: "src/dsp.json", to: "dsp.json" },
             ]
         })

@@ -18,7 +18,7 @@ export const English = {
         "Kimberlite": "Kimberlite",
         "IronIngot": "Iron Ingot",
         "CopperIngot": "Copper Ingot",
-        "StoneBrick": "Stone Brick",
+        "Stone": "Stone",
         "EnergeticGraphite": "Energetic Graphite",
         "HighPuritySilicon": "High Purity Silicon",
         "TitaniumIngot": "Titanium Ingot",
