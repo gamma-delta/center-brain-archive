@@ -718,7 +718,7 @@
       "time": 1.0,
       "results": [
         {
-          "item": "StoneBrick",
+          "item": "Stone",
           "count": 1.0
         }
       ],
@@ -1458,7 +1458,7 @@
       "recipe": "Foundation",
       "ingredients": [
         {
-          "item": "StoneBrick",
+          "item": "Stone",
           "count": 3.0
         },
         {
@@ -2411,7 +2411,7 @@
           "count": 10.0
         },
         {
-          "item": "StoneBrick",
+          "item": "Stone",
           "count": 4.0
         },
         {
@@ -2569,7 +2569,7 @@
           "count": 4.0
         },
         {
-          "item": "StoneBrick",
+          "item": "Stone",
           "count": 4.0
         }
       ],
@@ -2592,7 +2592,7 @@
           "count": 8.0
         },
         {
-          "item": "StoneBrick",
+          "item": "Stone",
           "count": 8.0
         }
       ],
@@ -2715,7 +2715,7 @@
           "count": 8.0
         },
         {
-          "item": "StoneBrick",
+          "item": "Stone",
           "count": 4.0
         },
         {
@@ -2746,7 +2746,7 @@
           "count": 12.0
         },
         {
-          "item": "StoneBrick",
+          "item": "Stone",
           "count": 12.0
         },
         {
@@ -2777,7 +2777,7 @@
           "count": 10.0
         },
         {
-          "item": "StoneBrick",
+          "item": "Stone",
           "count": 10.0
         },
         {
@@ -2889,7 +2889,7 @@
           "count": 4.0
         },
         {
-          "item": "StoneBrick",
+          "item": "Stone",
           "count": 2.0
         },
         {
@@ -2920,7 +2920,7 @@
           "count": 8.0
         },
         {
-          "item": "StoneBrick",
+          "item": "Stone",
           "count": 4.0
         },
         {
@@ -2951,7 +2951,7 @@
           "count": 8.0
         },
         {
-          "item": "StoneBrick",
+          "item": "Stone",
           "count": 8.0
         },
         {
@@ -3292,7 +3292,7 @@
           "count": 8.0
         },
         {
-          "item": "StoneBrick",
+          "item": "Stone",
           "count": 4.0
         },
         {
@@ -3669,7 +3669,7 @@
     "CopperIngot": [
       "CopperSmelting"
     ],
-    "StoneBrick": [
+    "Stone": [
       "StoneSmelting"
     ],
     "EnergeticGraphite": [
@@ -4066,7 +4066,7 @@
       "ParticleContainerFromUnipolar",
       "SolarPanel"
     ],
-    "StoneBrick": [
+    "Stone": [
       "Foundation",
       "ThermalPowerStation",
       "StorageMK1",

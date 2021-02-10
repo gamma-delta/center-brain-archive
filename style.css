@@ -6,3 +6,10 @@ li {
 .dsp-item, .dsp-itemstack, .pointer {
     cursor: pointer;
 }
+
+.item-thumbnail {
+    width: 2.5rem;
+    height: 2.5rem;
+    vertical-align: sub;
+    display: inline;
+}
