@@ -232,7 +232,7 @@ export const English = {
         },
 
         craftinfo(time: number, madeIn: Producer, handcraftable: boolean) {
-            return `${time.toPrecision(1)} seconds, ${English.producers[madeIn]}, ${handcraftable ? "Handcraftable" : "Not Handcraftable"}`;
+            return `${time} seconds, ${English.producers[madeIn]}, ${handcraftable ? "Handcraftable" : "Not Handcraftable"}`;
         },
         unlockedBy(tech: Technology) {
             return `Unlocked by ${English.technology[tech]}`;
