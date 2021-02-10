@@ -63,6 +63,18 @@ export function makeConsumeItem(item: string): HTMLElement {
     return body;
 }
 
+export function makeViewPins(): HTMLElement {
+    let body = document.createElement("div");
+    body.innerHTML = `<h2 class="display-2">${TRANSLATIONS.other.pinnedRecipes}</h2>`;
+
+    for (let recipe of OPTIONS.savedRecipes) {
+        let elm = makeRecipe(recipe, "listing");
+        elm.classList.add("mt-4");
+        body.append(elm);
+    }
+    return body;
+}
+
 export function updatePins() {
     document.getElementById('pinned-recipes')!.innerHTML = "";
     for (let recipe of OPTIONS.savedRecipes) {
@@ -171,8 +183,8 @@ function makeItemstack(stack: ItemStack, type: keyof HTMLElementTagNameMap = "p"
 
     if (OPTIONS.displayUsageLinks)
         elm.innerHTML = `${stack.count}x <img class="item-thumbnail" src="img/${stack.item}.png" alt="${stack.item}"></img> ${TRANSLATIONS.items[stack.item]}
-        [<a href="#?production=${stack.item}">${small ? TRANSLATIONS.other.produceSmall : TRANSLATIONS.other.produce}</a>]
-        [<a href="#?consumption=${stack.item}">${small ? TRANSLATIONS.other.consumeSmall : TRANSLATIONS.other.consume}</a>]`;
+        [<a href="#?action=production&item=${stack.item}">${small ? TRANSLATIONS.other.produceSmall : TRANSLATIONS.other.produce}</a>]
+        [<a href="#?action=consumption&item=${stack.item}">${small ? TRANSLATIONS.other.consumeSmall : TRANSLATIONS.other.consume}</a>]`;
     else {
         elm.innerHTML = `${stack.count}x <img class="item-thumbnail" src="img/${stack.item}.png" alt="${stack.item}"></img> ${TRANSLATIONS.items[stack.item]}`;
         addHandlersItem(elm, stack.item);
@@ -186,10 +198,10 @@ function makeItemstack(stack: ItemStack, type: keyof HTMLElementTagNameMap = "p"
  */
 function addHandlersItem(elm: HTMLElement, item: Item) {
     elm.onclick = ev => {
-        window.location.hash = "?production=" + item;
+        window.location.hash = "?action=production&item=" + item;
     };
     elm.oncontextmenu = ev => {
-        window.location.hash = "?consumption=" + item;
+        window.location.hash = "?action=consumption&item=" + item;
         // Prevent the menu from actually happening
         ev.preventDefault();
     };

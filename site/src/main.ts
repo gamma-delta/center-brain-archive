@@ -3,6 +3,7 @@ import * as Dom from "./dom";
 import { English } from "./translate/english";
 
 import halfmoon = require("halfmoon");
+import { getParams } from "./params";
 
 export let INFO: AllDSPInfo;
 export const TRANSLATIONS = English;
@@ -35,21 +36,16 @@ fetch('dsp.json')
 
         const content = document.getElementById('content')!;
         let updater = () => {
-            const matcher = /#\?(\w+)=(\w+)/;
-            let match = window.location.hash.match(matcher);
-
             let newContent;
-
-            if (match !== null && match.length == 3) {
-                let key = match[1];
-                let value = match[2];
-                if (key == "production") {
-                    newContent = Dom.makeProduceItem(value);
-                } else if (key == "consumption") {
-                    newContent = Dom.makeConsumeItem(value);
-                } else {
-                    newContent = Dom.makeLanding();
-                }
+            let params = getParams();
+            if (params === null) {
+                newContent = Dom.makeLanding();
+            } else if (params.action == "consumption") {
+                newContent = Dom.makeConsumeItem(params.item);
+            } else if (params.action == "production") {
+                newContent = Dom.makeProduceItem(params.item);
+            } else if (params.action == "showPins") {
+                newContent = Dom.makeViewPins();
             } else {
                 newContent = Dom.makeLanding();
             }
