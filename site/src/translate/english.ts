@@ -228,7 +228,7 @@ export const English = {
             return `Ways to consume ${English.items[item]}`;
         },
         unknownItem(item: string) {
-            return `Unknown item <code>${item}</code>`;
+            return `Unknown item "${item}"`;
         },
 
         craftinfo(time: number, madeIn: Producer, handcraftable: boolean) {
@@ -241,7 +241,7 @@ export const English = {
             return "Recipe ID: " + recipe;
         },
         unknownRecipeID(recipe: string) {
-            return `Unknown recipe ID <code>${recipe}</code>`;
+            return `Unknown recipe ID "${recipe}"`;
         }
     }
 };
