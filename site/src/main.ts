@@ -1,7 +1,6 @@
 import { AllDSPInfo, Recipe } from "./dsp";
 import * as Dom from "./dom";
 import { English } from "./translate/english";
-import { isOnMobile } from "./checkers";
 
 import halfmoon = require("halfmoon");
 
@@ -18,7 +17,7 @@ if (savedOptions != null) {
     OPTIONS = JSON.parse(savedOptions);
 } else {
     OPTIONS = {
-        displayUsageLinks: isOnMobile(),
+        displayUsageLinks: true,
         savedRecipes: [],
     };
 };
