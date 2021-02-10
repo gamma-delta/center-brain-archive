@@ -155,7 +155,7 @@ function makeItem(item: Item, type: keyof HTMLElementTagNameMap = "p", small = f
             [<a href="#?production=${item}">${small ? TRANSLATIONS.other.produceSmall : TRANSLATIONS.other.produce}</a>]
             [<a href="#?consumption=${item}">${small ? TRANSLATIONS.other.consumeSmall : TRANSLATIONS.other.consume}</a>]`;
     else {
-        elm.innerText = TRANSLATIONS.items[item];
+        elm.innerHTML = `<img class="item-thumbnail" src="img/${item}.png" alt="${item}"></img> ${TRANSLATIONS.items[item]}`;
         addHandlersItem(elm, item);
     }
 
@@ -170,11 +170,11 @@ function makeItemstack(stack: ItemStack, type: keyof HTMLElementTagNameMap = "p"
     elm.classList.add('dsp-itemstack');
 
     if (OPTIONS.displayUsageLinks)
-        elm.innerHTML = `${stack.count}x <img class="item-thumbnail" src="img/${stack.item}.png" alt="${stack.item}"></img> ${TRANSLATIONS.items[stack.item]}</span> 
+        elm.innerHTML = `${stack.count}x <img class="item-thumbnail" src="img/${stack.item}.png" alt="${stack.item}"></img> ${TRANSLATIONS.items[stack.item]}
         [<a href="#?production=${stack.item}">${small ? TRANSLATIONS.other.produceSmall : TRANSLATIONS.other.produce}</a>]
         [<a href="#?consumption=${stack.item}">${small ? TRANSLATIONS.other.consumeSmall : TRANSLATIONS.other.consume}</a>]`;
     else {
-        elm.innerText = `${stack.count}x ${TRANSLATIONS.items[stack.item]}`;
+        elm.innerHTML = `${stack.count}x <img class="item-thumbnail" src="img/${stack.item}.png" alt="${stack.item}"></img> ${TRANSLATIONS.items[stack.item]}`;
         addHandlersItem(elm, stack.item);
     }
 
